@@ -1,0 +1,27 @@
+.Head-profile{
+    .profile-dropdown{
+        position:absolute;
+        right:0;
+        background-color: $header-profile-menu-bg-color;
+        min-width:300px;
+        padding:0 8px;
+        li{
+            a{
+                font-size:.9em;
+                color: $header-profile-menu-text-color;
+                display:block;
+                text-align: left;
+                padding:18px 24px 18px 8px;
+                border-bottom: solid 1px transparent;
+                &:hover{
+                    color: $header-profile-menu-text-hover-color; 
+                    border-bottom:solid 1px $header-profile-menu-hover-border-bottom
+                }
+                &.roleview{
+                    border-top:solid 1px $header-profile-role-border-top;
+                    &:hover{border-bottom:solid 1px transparent}
+                }
+            }
+        }
+    }
+}

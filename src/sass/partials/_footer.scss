@@ -1,0 +1,128 @@
+footer{
+    background-color: $footer-bg-color;
+    color: $footer-text-color;
+    a{color: $footer-link-color}
+    padding: 36px 0; font-size: .8em;
+
+    & > div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 0;
+
+        .footer-directory{
+            > div{width:25%; padding:0 12px}
+            grid-area: f-directory;
+            display:flex;
+            justify-items: start;
+            margin-bottom:38px;
+            label{display:block; @include font(.95em, 'Bold'); color: $footer-directory-label-color; margin-bottom:8px;}
+            li{padding:6px 0;
+                a{font-size:.95em}
+            }
+        }
+        .flogo{justify-self:start;
+            grid-area: f-logo;
+            img{width:100px; margin-bottom: 8px}
+        }
+        .links{
+            grid-area: f-links;
+            justify-self:right;
+            li{display:inline; margin:0 0 0 2em}
+        }
+        .social{
+            grid-area: f-social;
+            justify-self:end;
+        }
+
+        .copyright{
+            grid-area: f-copyright;
+            padding: 8px 0 0 0;
+        }
+
+        .fhr{
+            grid-area: f-fhr;
+            margin:18px 0;
+            border-bottom: solid 1px $footer-divider-color;
+        }
+
+        grid-template-areas: 
+        "f-directory f-directory f-directory f-directory"
+        "f-social f-social f-social f-social"
+        "f-fhr f-fhr f-fhr f-fhr"
+        "f-logo f-links f-links f-links"
+        "f-copyright f-copyright f-copyright f-copyright";
+    }
+
+    @media only screen and (max-width: $large) {
+        font-size: .75em;
+    }
+    @media only screen and (max-width: $medium) {
+        & > div{
+            grid-template-columns: unset;
+            grid-template-rows: auto;
+            
+            .flogo{
+                justify-self:center; 
+                img{width:80px; margin:18px auto 8px auto;}
+            }
+            
+            .social{
+                justify-self:center;
+                margin:28px 0; 
+                text-align: center
+            }
+            
+            .links{
+                justify-self:center;
+                margin-bottom:8px;
+                li{margin:0 2em}
+            }
+
+            .copyright{
+                margin-top:12px;
+                padding:12px 0 0 0;
+                text-align: center
+            }
+
+            grid-template-areas: 
+            "f-directory"
+            "f-fhr"
+            "f-links"
+            "f-social"
+            "f-logo"
+            "f-copyright";
+        }
+    }
+    @media only screen and (max-width: $small) {
+        padding: 12px;
+        & > div{
+            .links{
+                justify-self:unset;
+                li{
+                    margin:0; padding:14px 0; display:block;
+                    border-bottom: solid 1px $footer-divider-color;
+                }
+            }
+
+            .footer-directory{
+                .expand{float:right;
+                    -webkit-transition: -webkit-transform .3s ease;
+                    transition: -webkit-transform .3s ease;
+                    transition: transform .3s ease;
+                    transition: transform .3s ease, -webkit-transform .3s ease;
+                }
+                > div{width:100%; padding:0; border-bottom: solid 1px $footer-divider-color}
+                display:block;
+                margin-bottom:0;
+                label{margin-bottom:0; padding:14px 0;
+                    &.active .expand{
+                        transform: rotate(45deg) scale(1.08);
+                    }
+                }
+                li{padding:12px 0 12px 16px}
+            }
+
+            .fhr{display:none}
+        }
+    }
+}

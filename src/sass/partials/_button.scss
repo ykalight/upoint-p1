@@ -1,0 +1,35 @@
+.button{
+    font-size: $button-text-size;
+    color: $button-text-color;
+    background-color: $button-bg-color;
+    &:hover{color: $button-text-hover-color; background-color: $button-bg-hover-color}
+    @include border-radius( $button-border-radius );
+    display:inline-block; margin:22px 0; padding:10px 3em;
+
+    &.bt-outline{
+        color: $outline-button-text-color;
+        background-color: $outline-button-bg-color;
+        border: solid 1px $outline-button-outline-color;
+        padding:8px 2em;
+        margin:42px 0;
+        &:hover{
+            background-color: $outline-button-bg-hover-color;
+            border-color: $outline-button-outline-hover-color;
+            color: $outline-button-text-hover-color;
+        }
+    }
+
+    @media only screen and (max-width: $medium) {
+        font-size:1em;
+    }
+
+    @media only screen and (max-width: $small) {
+        font-size:.94em;
+        padding:8px 2.6em;
+        &.bt-outline{
+            font-size:.9em;
+            padding:4px 2em;
+            margin:18px 0;
+        }
+    }
+}

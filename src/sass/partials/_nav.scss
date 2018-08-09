@@ -1,0 +1,70 @@
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes navlink {
+    0% {background-color:transparent; top:52px;}
+}
+
+/* Standard syntax */
+@keyframes navlink {
+    0% {background-color:transparent; top:52px;}
+}
+
+nav{
+    li{
+        font-size: .85em;
+        display:inline;
+        margin:2em;
+        a{color: $nav-text-color;
+            &.active{
+                color: $nav-active-text-color
+            }
+        }
+
+        div{
+            -webkit-animation-name: navlink; /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: .5s; /* Safari 4.0 - 8.0 */
+            animation-name: navlink;
+            animation-duration: .5s;
+    
+            background-color: $nav-second-tier-bg-color;
+            color: $nav-second-tier-text-color;
+            top: 54px;
+    
+            li{
+                display:inline-block;
+                margin:0;
+                font-size:1em;
+                a{
+                    display:block;
+                    padding:18px 28px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: $large) {
+        li{margin:1em; font-size: .8em}
+    }
+    @media only screen and (max-width: $medium) {
+        li{margin:.8em; font-size: .75em}
+    }
+}
+
+@media only screen and (max-width: $medium) {
+    .slide-pane__header{visibility:hidden}
+    .slide-pane__content{
+        padding:4px 12px 0 0;
+        nav{
+            width:100%;
+            margin:0; padding:0;
+            li{
+                margin:0;
+                @include font(1em, 'Regular');
+                font-size:.9em !important;
+                display:block;
+                padding:18px; border-bottom:solid 1px $mobile-menu-li-divider-color;
+            }
+        }
+    }
+}
+
+.ReactModalPortal .navSlider{z-index:999; background-color: $mobile-menu-bg-color}
