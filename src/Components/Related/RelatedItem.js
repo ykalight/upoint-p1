@@ -6,7 +6,7 @@ import {MdKeyboardArrowRight} from 'react-icons/lib/md';
 let RelatedItem = function statelessFunctionComponentClass(props) {
   let title = props.related.title,
     small = props.related.small,
-    img = props.related.img,
+    img = `${process.env.PUBLIC_URL}` + props.related.img,
     destination = props.related.destination,
     onclick = props.onClick;
 

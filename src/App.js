@@ -10,7 +10,6 @@ import dataRelated_Savings from './data/related_savings.json';
 import dataRelated_Health from './data/related_health.json';
 import dataRelated_Work from './data/related_work.json';
 
-import Cards from './Components/Card/Cards';
 import CardsNx from './Components/Card/CardsNx';
 import Related from './Components/Related/Related';
 import HeaderBar from './Components/Header/HeaderBar';
@@ -18,8 +17,6 @@ import Banner from './Components/Header/Banner';
 import Footer from './Components/Footer/Footer';
 import DynView from './Components/Views/DynView';
 import ToolboxEditor from './Components/Utility/ToolboxEditor';
-
-import {Link} from 'react-router-dom'; 
 
 
 let homeContentStyle = {position: 'absolute', margin: 'auto', width: '100%', transform: 'translate(0%, -3.4%)'},
@@ -72,34 +69,16 @@ class App extends Component {
 
   render() {
     return (
-      <Router onUpdate={() => window.scrollTo(0, 0)}>
+      <Router basename={`${process.env.PUBLIC_URL}`} onUpdate={() => window.scrollTo(0, 0)}>
         <div className="App" id="wrapper" ref={ref => this.el = ref}>
 
           <Route path='/' component={HeaderBar} />
-
-          <Route path='/upoint-full' render={()=> {return(
-            <div style={{padding: '140px 0', textAlign:'center'}}>
-              <Link className="button" to="/dashboard" style={{fontSize:'2em', fontWeight:'bold', backgroundColor:'#2bafd7'}}>Click to start demo</Link>
-            </div>
-          )}} />
           
-          <Route exact strict path='/dashboard' render={()=> {return(
+          <Route exact strict path='/' render={()=> {return(
             <main>
               <Banner />
               <div className="content" style={homeContentStyle}>
                 <CardsNx cardsdata={this.state.cardsdata} onClick={this.showToolEdit} />
-                <Related relateddata={this.state.relateddata} />
-                <Footer />
-              </div>
-              {this.state.toolboxedit_show && (<ToolboxEditor show={this.state.toolboxedit_show} onClickClose={this.hideToolEdit} />)}
-            </main>
-          )}} />
-
-          <Route exact strict path='/dashboard_xp' render={()=> {return(
-            <main>
-              <Banner />
-              <div className="content" style={homeContentStyle}>
-                <Cards cardsdata={this.state.cardsdata} onClick={this.showToolEdit} />
                 <Related relateddata={this.state.relateddata} />
                 <Footer />
               </div>

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router} from 'react-router-dom'; 
 import Route from 'react-router-dom/Route';
-// import ReactDrawer from 'react-drawer';
 import Subnav from '../Subnav/Subnav';
 import FadeIn from 'react-fade-in';
 import 'react-drawer/lib/react-drawer.css';
@@ -65,7 +63,7 @@ class DynView extends Component {
     return (
       <FadeIn>
         <div className="dviewWrapper">
-          <Router onUpdate={() => window.scrollTo(0, 0)}>
+          
             <div className="container subnav-container">
               <h1>{this.props.pgtitle}</h1>
               
@@ -81,7 +79,7 @@ class DynView extends Component {
                 <Subnav subnavdata={this.state.data_work} />
               )}} />
             </div>
-          </Router>
+          
 
             <div className="dviewContentContainer">
                 <div className="container" style={this.props.divstyle}>

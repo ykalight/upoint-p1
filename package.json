@@ -1,8 +1,8 @@
 {
-  "name": "upoint-full",
+  "name": "upoint-p1",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ykalight.github.io/upoint-full",
+  "homepage": "http://hewittsolutions.com/design/upoint2018/p1",
   "dependencies": {
     "gh-pages": "^1.2.0",
     "jquery": "^3.3.1",
@@ -25,8 +25,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   }
 }

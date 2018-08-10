@@ -46,6 +46,11 @@ class Related extends Component {
       relatedItems = this.props.relateddata.slice(0, `${this.state.show}`).map(related => {
         return (
           <FadeIn transitionDuration="500">
+            {/* 
+              Key in the child instead of at parent <FadeIn> throws 'key' warning.
+              However, placing key at parent causes entire related to render when 'More...' is clicked.
+              Ignore warnng.
+            */}
             <RelatedItem key={uuid.v4()} related={related} onClick={this.scrollToTop} />
           </FadeIn>
         )
