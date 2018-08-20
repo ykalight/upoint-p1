@@ -6,7 +6,7 @@
         font-size: $banner-button-text-size;
         color: $banner-button-text-color;
         background-color: $banner-button-bg-color;
-        &:hover{background-color: $banner-button-hover-color; color: $banner-button-text-hover-color}
+        &:hover{background-color: lighten($banner-button-bg-color, 14%); color: $banner-button-text-color}
     }
 
     img{height: 460px}

@@ -4,7 +4,7 @@
     "title": "Your 401(k) account",
     "text": "",
     "visual": "tempGraph_01",
-    "nxlink": "savings",
+    "nxlink": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/dc_home.html?flag=savplan",
     "expand": 
       {
         "title": "Retirement Income Projection Modeler",
@@ -34,7 +34,7 @@
     "title": "Your health plans & deductibles",
     "text": "",
     "visual": "tempGraph_02",
-    "nxlink": "health",
+    "nxlink": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/hm_home.html",
     "expand":
       {
         "title": "Your Health Plans",
@@ -64,7 +64,7 @@
     "title": "Your well-being score has improved 47%",
     "text": "",
     "visual": "tempGraph_03",
-    "nxlink": "wellbeing",
+    "nxlink": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/biometric_scorecard.html",
     "expand":
       {
         "title": "Your Wellbeing Snapshot",
@@ -84,7 +84,7 @@
     "title": "You have 50.5 hours of unused PTO",
     "text": "",
     "visual": "tempGraph_07",
-    "nxlink": "work",
+    "nxlink": "#",
     "expand":
       {
         "title": "Your Time-Off Snapshot",

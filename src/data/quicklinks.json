@@ -1,0 +1,45 @@
+[
+    {
+        "title": "Health Plans",
+        "icon": "medical",
+        "destination": "/blank"
+    },
+    {
+        "title": "Find a Doctor",
+        "icon": "person",
+        "destination": "/blank"
+    },
+    {
+        "title": "Timesheet",
+        "icon": "clock",
+        "destination": "/blank"
+    },
+    {
+        "title": "HSA Account",
+        "icon": "graph-circle",
+        "destination": "/blank"
+    },
+    {
+        "title": "Wellbeing",
+        "icon": "spark",
+        "destination": "/blank"
+    },
+    {
+        "title": "Workday",
+        "icon": "graph-bar-outline",
+        "destination": "/blank"
+    },
+    {
+        "title": "Dependent Care",
+        "icon": "card",
+        "destination": "/blank"
+    },
+    {
+        "title": "Documents",
+        "icon": "document",
+        "destination": "/blank"
+    }   
+]
+  
+  
+  

@@ -16,7 +16,6 @@ import HeaderBar from './Components/Header/HeaderBar';
 import Banner from './Components/Header/Banner';
 import Footer from './Components/Footer/Footer';
 import DynView from './Components/Views/DynView';
-import ToolboxEditor from './Components/Utility/ToolboxEditor';
 
 
 let homeContentStyle = {position: 'absolute', margin: 'auto', width: '100%', transform: 'translate(0%, -3.4%)'},
@@ -24,8 +23,8 @@ contentStyle = {marginTop: '28px', width: '90%'};
 
 class App extends Component {
 
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
     this.state = {
       cards: [],
       cardsdata: [],
@@ -35,8 +34,8 @@ class App extends Component {
       relateddata_Work: [],
       toolboxedit_show: false
     };
-    this.showToolEdit = this.showToolEdit.bind(this);
-    this.hideToolEdit = this.hideToolEdit.bind(this);
+    // this.showToolEdit = this.showToolEdit.bind(this);
+    // this.hideToolEdit = this.hideToolEdit.bind(this);
   }
 
 
@@ -58,15 +57,6 @@ class App extends Component {
     Modal.setAppElement(this.el);
   }
 
-  showToolEdit(e) {
-    e.preventDefault();
-    this.setState({toolboxedit_show: true});
-  }
-
-  hideToolEdit() {
-    this.setState({toolboxedit_show: false});
-   }
-
   render() {
     return (
       <Router basename={`${process.env.PUBLIC_URL}`} onUpdate={() => window.scrollTo(0, 0)}>
@@ -78,11 +68,13 @@ class App extends Component {
             <main>
               <Banner />
               <div className="content" style={homeContentStyle}>
-                <CardsNx cardsdata={this.state.cardsdata} onClick={this.showToolEdit} />
+                
+                <CardsNx cardsdata={this.state.cardsdata} />
+                                                          
                 <Related relateddata={this.state.relateddata} />
                 <Footer />
               </div>
-              {this.state.toolboxedit_show && (<ToolboxEditor show={this.state.toolboxedit_show} onClickClose={this.hideToolEdit} />)}
+              {/* {this.state.toolboxedit_show && (<ToolboxEditor show={this.state.toolboxedit_show} onClickClose={this.hideToolEdit} />)} */}
             </main>
           )}} />
 
@@ -196,6 +188,18 @@ class App extends Component {
             <main>
               <DynView divstyle={contentStyle} pgtitle="Manager View" temptext="Lorem ipsum..." />
               {/* <Related relateddata={this.state.relateddata_Work} /> */}
+              <Footer />
+            </main>
+          )}} />
+
+          <Route exact strict path='/blank' render={()=> {return(
+            <main>
+              <div style={{padding:'100px'}}>
+                <p>B L A N K - P A G E</p>
+                <br /><br />
+                <a href="/">Go back</a>
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+              </div>
               <Footer />
             </main>
           )}} />

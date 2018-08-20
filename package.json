@@ -2,7 +2,7 @@
   "name": "upoint-p1",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://hewittsolutions.com/design/upoint2018/p1",
+  "homepage": "https://ykalight.github.io/upoint-p1",
   "dependencies": {
     "gh-pages": "^1.2.0",
     "jquery": "^3.3.1",
@@ -16,14 +16,18 @@
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
+    "react-scroll-to-component": "^1.0.2",
     "react-slide-toggle": "^0.1.13",
     "react-slidedown": "^1.3.0",
     "react-sliding-pane": "^2.0.2",
+    "react-timeout": "^1.1.1",
     "uuid": "^3.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

@@ -6,6 +6,7 @@ let bellStyle ={
   cursor: 'pointer',
   transition: '0.4s'
 }, bellIconStlye={
+  display:'block',
   height:'54px', width: '54px',
   backgroundImage: `url(${iconart})`,
   backgroundRepeat: "no-repeat",
@@ -18,7 +19,7 @@ class Message extends Component {
 
     return (
         <div className="Head-message" style={bellStyle}>
-            <div style={bellIconStlye}></div>
+            <a title="Messages" href="http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/gmc_home.html" style={bellIconStlye}>&nbsp;</a>
         </div>
     );
   }

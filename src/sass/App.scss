@@ -12,15 +12,20 @@
 @import "partials/nav";
 @import "partials/banner";
 @import "partials/cards";
+@import "partials/icons";
+@import "partials/quicklinks";
 @import "partials/button";
 @import "partials/related";
 @import "partials/relatedAction";
 @import "partials/drawer";
 @import "partials/dynviews";
 @import "partials/subnav";
+@import "partials/popoversoft";
 @import "partials/profile";
-@import "partials/toolboxEditor";
 @import "partials/footer";
+
+// TEMP ----! for prototype demo only!  ----!
+// Remove once real content in linked.
 @import "partials/tempContent";
 
 

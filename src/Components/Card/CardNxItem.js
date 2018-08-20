@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {MdKeyboardArrowRight} from 'react-icons/lib/md';
 import FadeIn from 'react-fade-in';
-import {Link} from 'react-router-dom';
 
 let arrowDirection = <MdKeyboardArrowRight />;
 
@@ -11,17 +10,12 @@ class CardNxItem extends Component {
         this.state = { 
             active: 'Card'
         };
-        this.scrollToTop=this.scrollToTop.bind(this);
-    }
-
-    scrollToTop() {
-        window.scrollTo(0,0);
     }
 
     render() {
         return (
         <FadeIn>
-            <Link to={this.props.card.nxlink} onClick={this.scrollToTop}>
+            <a href={this.props.card.nxlink}>
                 <div className={this.state.active} > 
                     <div className="cardTop nonexpand">
                         <div className="icon">
@@ -36,7 +30,7 @@ class CardNxItem extends Component {
                         </div>
                     </div>
                 </div>
-            </Link>
+            </a>
         </FadeIn>
         );
     }

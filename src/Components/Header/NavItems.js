@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import uuid from 'uuid';
-import {NavLink} from 'react-router-dom';
 import {MdKeyboardArrowDown} from 'react-icons/lib/md';
 import More from './More';
 
@@ -23,7 +22,7 @@ class NavItems extends Component {
     toggleShow(e){
         this.setState({show: !this.state.show, txt: this.state.txt === "anim" ? "" : "anim"});
         e.preventDefault();
-      }
+    }
     
     hide(e){
         if(this.state.show){
@@ -53,7 +52,7 @@ class NavItems extends Component {
 
             return (
                 <li>
-                    <NavLink exact activeClassName={"active"} to={this.props.nav.destination} onClick={this.toggleShow} onBlur={this.hide}>{this.props.nav.title} <MdKeyboardArrowDown style={{width: '18px', height: '18px'}} /></NavLink>
+                    <a href={this.props.nav.destination} onClick={this.toggleShow} onBlur={this.hide}>{this.props.nav.title} <MdKeyboardArrowDown style={{width: '18px', height: '18px'}} /></a>
                     {this.state.show && (
                         <div style={divStyle}>
                             <ul>{more_links}</ul>
@@ -63,7 +62,7 @@ class NavItems extends Component {
             ) 
         } else {
             return (
-                <li><NavLink exact activeClassName={"active"} to={this.props.nav.destination} onClick={this.scrollToTop}>{this.props.nav.title}</NavLink></li>
+                <li><a href={this.props.nav.destination}>{this.props.nav.title}</a></li>
             );
         }
     }

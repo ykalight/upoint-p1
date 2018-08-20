@@ -37,6 +37,10 @@ class Related extends Component {
       window.scrollTo(0,0);
   }
 
+  preventDefault(e) {
+    e.preventDefault();
+}
+
 
   render() {
 
@@ -69,7 +73,7 @@ class Related extends Component {
 
             <div className="more">
               <span onClick={this.state.showall ? this._showDefault : this._showAll}>
-                <Button addclass="button bt-outline" destination="#" label={this.state.btlabel} />
+                <Button addclass="button bt-outline" destination="#" onClick={this.preventDefault} label={this.state.btlabel} />
               </span>
             </div>
 

@@ -3,6 +3,7 @@ import Logo from './Logo';
 import Nav from './Nav';
 import Message from './Message';
 import Profile from './Profile';
+import Chat from './Chat';
 import Search from './Search';
 import MobileNav from './MobileNav';
 
@@ -72,6 +73,7 @@ class HeaderBar extends Component {
                     <MobileNav />
                     <Logo />
                     <Nav className={this.state.navshowclass} />
+                    <Chat />
                     <Message />
                     <Profile />
                     <Search />

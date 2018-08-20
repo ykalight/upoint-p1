@@ -1,70 +1,70 @@
 [
     {
         "title": "Savings & Retirement",
-        "destination": "savings",
+        "destination": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/sr_home.html",
         "links": 
         [
             {
                 "label": "401(k) Savings",
-                "destination": "/savings"
+                "destination": "/blank"
             },
             {
                 "label": "Pension",
-                "destination": "/savings"
+                "destination": "/blank"
             },
             {
                 "label": "Nonqualified Savings",
-                "destination": "/savings"
+                "destination": "/blank"
             },
             {
                 "label": "Financial Education",
-                "destination": "/savings"
+                "destination": "/blank"
             }
         ]
     },
     {
         "title": "Health & Insurance",
-        "destination": "/health",
+        "destination": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/hm_home.html",
         "links": 
         [
             {
                 "label": "Health Plans",
-                "destination": "/health"
+                "destination": "/blank"
             },
             {
                 "label": "Find a Doctor",
-                "destination": "/health"
+                "destination": "/blank"
             },
             {
                 "label": "Life Insurance",
-                "destination": "/health"
+                "destination": "/blank"
             },
             {
                 "label": "Health Savings Account",
-                "destination": "/health"
+                "destination": "/blank"
             },
             {
                 "label": "Dependent Care Spending Account",
-                "destination": "/health"
+                "destination": "/blank"
             }
         ]
     },
     {
         "title": "Work Management",
-        "destination": "/work",
+        "destination": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/pt_home.html",
         "links": 
         [
             {
                 "label": "Timesheet",
-                "destination": "/work"
+                "destination": "/blank"
             },
             {
                 "label": "Manage Performance Goals",
-                "destination": "/work"
+                "destination": "/blank"
             },
             {
                 "label": "Retirement Planning",
-                "destination": "/work"
+                "destination": "/blank"
             }
         ]
     },
@@ -75,23 +75,23 @@
         [
             {
                 "label": "Life Changes",
-                "destination": "/life"
+                "destination": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/le_changes.html"
             },
             {
                 "label": "Your Well-Being",
-                "destination": "/wellbeing"
+                "destination": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/wl_home.html"
             },
             {
                 "label": "Perks & Discounts",
-                "destination": "/perks"
+                "destination": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/ob_home.html"
             },
             {
                 "label": "Reimbursement Account",
-                "destination": "/reimbursement"
+                "destination": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/ysa_ra_home.html"
             },
             {
                 "label": "Other Benefits",
-                "destination": "/other"
+                "destination": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/jc_home.html"
             }
         ]
     }

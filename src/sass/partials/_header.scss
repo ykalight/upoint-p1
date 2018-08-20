@@ -10,7 +10,7 @@ header{
     & > div{
         #mnav{display:none;}
         display: grid;
-        grid-template-columns: 240px auto 54px 54px 54px;
+        grid-template-columns: 240px auto 54px 54px 54px 54px;
         grid-gap: 0;
         grid-auto-rows: 54px;
         align-items:center; 
@@ -24,7 +24,7 @@ header{
 
         @media only screen and (max-width: $medium) {
             .Head-logo img{height:18px; max-width:90px}
-            grid-template-columns: auto auto 54px 54px 54px;
+            grid-template-columns: auto auto 54px 54px 54px 54px;
             grid-auto-rows: auto;
         }
 
@@ -35,7 +35,7 @@ header{
                 border-right: $mobile-nav-bt-divider;
                 margin-right: 12px;
             }
-            .Head-profile{display:none}
+            .Head-profile, .Head-chat{display:none}
             grid-template-columns: 54px auto 54px 54px;
         }
     }
@@ -46,7 +46,7 @@ header{
 
     .Head-search{
         background-color: $header-search-bt-color;
-        &:hover{background-color: $header-search-bt-hover-color}
+        &:hover{background-color: lighten($header-search-bt-color, 6%)}
         
         .react-drawer-drawer{
             background-color: $header-searchbar-bg-color;
@@ -57,8 +57,8 @@ header{
         }
         .search{
             background-color: $header-search-input-bg-color;
-            height: 68px;
-            margin: 28px auto;
+            height: 54px;
+            margin: 6px auto 14px auto;
             padding: 12px 24px;
             font-size: 1.4em;
             outline:none;
@@ -90,10 +90,9 @@ header{
         }
     }
 
-    .Head-profile{
-        &:hover{background-color: $header-profile-bt-hover-color}
-    }
-    .Head-message{
-        &:hover{background-color: $header-message-bt-hover-color}
+    .Head-profile, .Head-message, .Head-chat{
+        &:hover{
+            background-color: lighten($header-bg-color, 4%)
+        }
     }
 }

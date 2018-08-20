@@ -10,42 +10,36 @@ $button-text-size: 1em;
 $button-text-color: #fff;
 $button-text-hover-color: $app-blue;
 $button-bg-color: $app-blue;
-$button-bg-hover-color: darken($app-blue, 20%);
 $button-border-radius: 24px;
-
 $outline-button-text-color: $app-blue;
-$outline-button-text-hover-color: darken($app-blue, 20%);
 $outline-button-bg-color: transparent;
-$outline-button-bg-hover-color: transparent;
 $outline-button-outline-color: $app-blue;
-$outline-button-outline-hover-color: darken($app-blue, 20%);
 
 
 // ====================================  HEADER  =============================================== 
-$header-bg-color: rgba(5, 26, 52, .8);
+$header-bg-color: #051a34cc;
 $header-text-color: #fff;
 $header-logo-max-width: 240px;
 $header-logo-img-height: 26px;
 $header-logo-margin: 0 4px;
 $header-search-bt-color: $blue-dark;
-$header-search-bt-hover-color: lighten($blue-dark, 6%);
 $header-search-input-bg-color: darken($blue-gray-dark, 10%);
 $header-search-input-bottom-border: solid 1px darken($app-medgray, 18%);
 $header-search-input-text-color: $app-lightgray;
 $header-searchbar-bg-color: darken($blue-gray-dark, 10%);
-$header-profile-bt-hover-color: rgba(5, 26, 52, .4);
-$header-profile-menu-bg-color: rgba(5, 26, 52, .9);
-$header-profile-menu-text-color: #fff;
+$header-profile-header-bg-color: $app-lightgray;
+$header-profile-header-name-color: #222;
+$header-profile-logout-color: $app-red;
+$header-profile-menu-bg-color:#fff;
+$header-profile-menu-text-color: #555;
 $header-profile-menu-text-hover-color: $link-color;
-$header-profile-menu-hover-border-bottom: rgba(255, 255, 255, 0.3);
 $header-profile-role-border-top: rgba(255, 255, 255, 0.3);
-$header-message-bt-hover-color:  rgba(5, 26, 52, .4);
 
 
 // ====================================  NAV  ===================================================
 $nav-text-color: #fff;
 $nav-active-text-color: lighten($app-blue, 10%);
-$nav-second-tier-bg-color: rgba(0, 0, 0, .9);
+$nav-second-tier-bg-color: rgba(5, 26, 52, .97);
 $nav-second-tier-text-color: #fff;
 $mobile-nav-bt-divider: solid 1px rgba(255, 255, 255, .2);
 $mobile-menu-li-divider-color: rgba(255,255,255, 0.2);
@@ -57,7 +51,6 @@ $banner-button-text-size: 1.2em;
 $banner-button-text-color: #fff;
 $banner-button-text-hover-color: $app-blue;
 $banner-button-bg-color: $app-blue;
-$banner-button-hover-color: darken($app-blue, 20%);
 
 
 // ====================================  FOOTER  ================================================ 
@@ -91,3 +84,21 @@ $related-item-bg-border-radius: 18px;
 $related-item-smallview-border-bottom: solid 1px lighten($app-gray, 6%);
 $related-item-img-border-radius: 100%;
 
+
+// =====================================  QUICKLINK (SMALL TILE)  ===============================================
+$quicklink-label-color: #222;
+$quicklink-label-hover: $app-gray;
+$quicklink-icon-hover: $app-gray;
+$quicklink-icon-medical-color: $app-orange;
+$quicklink-icon-clock-color: $app-green;
+$quicklink-icon-person-color: $app-blue;
+$quicklink-icon-graph-circle-color: $blue-gray;
+$quicklink-icon-spark-color: $app-yellow;
+$quicklink-pin-color: lighten($app-medgray, 18%);
+$quicklink-pin-active-color: $app-orange;
+
+
+// =====================================  UTILITY  ===============================================
+$popover-text: $app-darkgray;
+$popover-bg-color: lighten($app-yellow, 10%);
+$popover-border-radius: 12px;

@@ -2,7 +2,7 @@
     font-size: $button-text-size;
     color: $button-text-color;
     background-color: $button-bg-color;
-    &:hover{color: $button-text-hover-color; background-color: $button-bg-hover-color}
+    &:hover{color: $button-text-hover-color; background-color: darken($button-bg-color, 18%)}
     @include border-radius( $button-border-radius );
     display:inline-block; margin:22px 0; padding:10px 3em;
 
@@ -13,9 +13,9 @@
         padding:8px 2em;
         margin:42px 0;
         &:hover{
-            background-color: $outline-button-bg-hover-color;
-            border-color: $outline-button-outline-hover-color;
-            color: $outline-button-text-hover-color;
+            background-color: darken($outline-button-bg-color,18%);
+            border-color: darken($outline-button-outline-color, 18%);
+            color: darken($outline-button-text-color, 18%);
         }
     }
 

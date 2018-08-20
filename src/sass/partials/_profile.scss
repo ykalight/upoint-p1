@@ -1,25 +1,52 @@
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes profileFly {
+    0% {opacity: 0; right:-300px}
+}
+
+/* Standard syntax */
+@keyframes profileFly {
+    0% {opacity: 0; right:-300px}
+}
+
 .Head-profile{
     .profile-dropdown{
+        border:solid 1px lighten($app-medgray, 28%);
+        border-top:0;
+        @include boxshadow(0, -1px, 10px, -4px, #000);
+
+        -webkit-animation-name: profileFly; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: .3s; /*Safari 4.0 - 8.0 */
+        animation-name: profileFly;
+        animation-duration: .3s;
+
         position:absolute;
         right:0;
         background-color: $header-profile-menu-bg-color;
-        min-width:300px;
-        padding:0 8px;
+        min-width:580px;
+
+        .profile-blocks{display:flex; padding:0 8px}
+        .profile-header{
+            background-color: $header-profile-header-bg-color;
+            display:flex;
+            padding:18px 24px;
+            .profile-name{color: $header-profile-header-name-color}
+            a{font-size:.9em; padding: 0 24px; margin-left:24px; border-left:solid 1px $app-medgray; color: $header-profile-logout-color;
+                &:hover{color: lighten($header-profile-logout-color, 28%)}
+            }
+        }
+        
+        ul{min-width:200px; padding:18px 24px;
+            label{display:block; text-align:left; @include font(.8, 'Bold'); color: $header-profile-header-name-color}
+        }
         li{
             a{
-                font-size:.9em;
+                font-size:.8em;
                 color: $header-profile-menu-text-color;
                 display:block;
                 text-align: left;
                 padding:18px 24px 18px 8px;
-                border-bottom: solid 1px transparent;
                 &:hover{
                     color: $header-profile-menu-text-hover-color; 
-                    border-bottom:solid 1px $header-profile-menu-hover-border-bottom
-                }
-                &.roleview{
-                    border-top:solid 1px $header-profile-role-border-top;
-                    &:hover{border-bottom:solid 1px transparent}
                 }
             }
         }

@@ -51,6 +51,8 @@
             grid-gap: 0px;
             justify-items: start;
             align-items: center;
+
+            > div{width:100%}
             
             a.related{
                 border-bottom: $related-item-smallview-border-bottom;
