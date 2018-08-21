@@ -37,7 +37,11 @@ class ProfileMenu extends Component {
     return (
         <div className={this.props.className} style={this.props.style}>
             <div className="profile-header">
-                <div className="profile-name">Patricia Alavrez</div>
+                <div className="profile-name">
+                    Patricia Alavrez
+                    <div className="profile-log">Last login: MAR 26, 2018, 14:02 ET</div>
+                </div>
+                
                 <Link to="#">Log Out</Link>
                 <MdClose style={closeIconStyle} onClick={this.props.onClick} />
             </div>

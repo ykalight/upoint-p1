@@ -24,13 +24,16 @@
         background-color: $header-profile-menu-bg-color;
         min-width:580px;
 
-        .profile-blocks{display:flex; padding:0 8px}
+        .profile-blocks{display:flex; padding:0 8px; align-items: center;}
         .profile-header{
             background-color: $header-profile-header-bg-color;
-            display:flex;
+            display:flex; align-items: center;
             padding:18px 24px;
-            .profile-name{color: $header-profile-header-name-color}
-            a{font-size:.9em; padding: 0 24px; margin-left:24px; border-left:solid 1px $app-medgray; color: $header-profile-logout-color;
+            .profile-name{
+                font-size:1.3em; text-align:left; color: $header-profile-header-name-color; padding-right:24px; border-right:solid 1px $app-medgray;
+                .profile-log{color: lighten($header-profile-header-name-color, 22%); font-size:48%}
+            }
+            a{font-size:.9em; padding: 0 24px; color: $header-profile-logout-color;
                 &:hover{color: lighten($header-profile-logout-color, 28%)}
             }
         }
