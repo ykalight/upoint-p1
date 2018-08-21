@@ -56,7 +56,6 @@ class FooterDirectory extends Component {
                     </ul>
                 </MediaQuery>
             </div>
-            
         </div>
     );
   }

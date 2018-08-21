@@ -1090,8 +1090,7 @@ nav li div li a {
 .quicklinks a {
   display: block;
   transition: 0.6s;
-  padding: 12px 8px;
-  margin: 0 18px;
+  margin: 32px 42px;
   text-align: center;
   font-size: 8.4px;
   font-size: 0.84rem;
@@ -1099,7 +1098,7 @@ nav li div li a {
 }
 .quicklinks a label {
   display: block;
-  color: #222;
+  color: #555;
   margin-top: 12px;
 }
 .quicklinks a .ficon-medical:before {
@@ -1573,7 +1572,6 @@ nav li div li a {
 .Head-profile .profile-dropdown .profile-blocks {
   display: flex;
   padding: 0 8px;
-  align-items: center;
 }
 .Head-profile .profile-dropdown .profile-header {
   background-color: #ededed;
@@ -1636,7 +1634,7 @@ footer > div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 0;
-  grid-template-areas: "f-directory f-directory f-directory f-social" "f-fhr f-fhr f-fhr f-fhr" "f-logo f-links f-links f-links" "f-copyright f-copyright f-copyright f-copyright";
+  grid-template-areas: "f-directory f-directory f-directory f-social" "f-switch f-switch f-switch f-switch" "f-fhr f-fhr f-fhr f-fhr" "f-logo f-links f-links f-links" "f-copyright f-copyright f-copyright f-copyright";
 }
 footer > div .footer-directory {
   grid-area: f-directory;
@@ -1682,6 +1680,11 @@ footer > div .social {
   grid-area: f-social;
   justify-self: start;
 }
+footer > div .tempSwitch {
+  grid-area: f-switch;
+  padding: 0 12px;
+  font-size: 0.95em;
+}
 footer > div .copyright {
   grid-area: f-copyright;
   padding: 8px 0 0 0;
@@ -1700,7 +1703,7 @@ footer > div .fhr {
   footer > div {
     grid-template-columns: unset;
     grid-template-rows: auto;
-    grid-template-areas: "f-directory" "f-fhr" "f-links" "f-social" "f-logo" "f-copyright";
+    grid-template-areas: "f-directory" "f-switch" "f-fhr" "f-links" "f-social" "f-logo" "f-copyright";
   }
   footer > div .flogo {
     justify-self: center;
@@ -1730,6 +1733,12 @@ footer > div .fhr {
 @media only screen and (max-width: 740px) {
   footer {
     padding: 12px;
+  }
+  footer > div {
+    grid-template-areas: "f-directory" "f-fhr" "f-links" "f-switch" "f-social" "f-logo" "f-copyright";
+  }
+  footer > div .tempSwitch {
+    padding: 0;
   }
   footer > div .links {
     justify-self: unset;
@@ -1771,6 +1780,36 @@ footer > div .fhr {
   }
   footer > div .fhr {
     display: none;
+  }
+}
+
+.iva-trigger {
+  bottom: 100px;
+  width: 54px;
+  height: 50px;
+  padding: 8px 12px 12px 8px;
+  background-color: #8fb22c;
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: bold;
+  /* usage @import border-radius-custom(12px, 0, 10px, 0) */
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 8px;
+  background-clip: padding-box;
+}
+@media only screen and (max-width: 920px) {
+  .iva-trigger {
+    bottom: 60px;
+    width: 44px;
+    height: 36px;
+    padding: 4px 8px 8px 8px;
+    font-size: 0.7em;
   }
 }
 

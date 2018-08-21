@@ -13,6 +13,11 @@ class Footer extends Component {
             <div className="container">
                 <FooterDirectory />
                 <Social />
+
+                <div className="tempSwitch">
+                    <a href="http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/home_v2.html">Switch to Classic View</a>
+                </div>
+
                 <div className="fhr"></div>
                 <LogoUpoint />
                 <div className="copyright">&copy; 2019 Alight</div>

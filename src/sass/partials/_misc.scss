@@ -1,0 +1,18 @@
+.iva-trigger{
+    bottom:100px;
+    width:54px;
+    height:50px;
+    padding: 8px 12px 12px 8px;
+    background-color: darken($app-green, 8%);
+    color:#fff;
+    font-size: .9em; font-weight:bold;
+    @include border-radius-custom(8px, 0, 0, 8px);
+
+    @media only screen and (max-width: $medium) {
+        bottom:60px;
+        width:44px;
+        height:36px;
+        padding: 4px 8px 8px 8px;
+        font-size: .7em;
+    }
+}
