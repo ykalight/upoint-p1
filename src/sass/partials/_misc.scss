@@ -1,3 +1,12 @@
+.ficon-pin{ 
+    font-size:1.2em;
+    color: $pin-color;
+    @include border-radius(100px);
+    // border:dotted 1px #777;
+    &.pinned{color: $pin-active-color; font-weight:bold}   
+}
+.cardpin{top:18px !important; right:22px !important;}
+
 .iva-trigger{
     bottom:100px;
     width:54px;
@@ -14,5 +23,38 @@
         height:36px;
         padding: 4px 8px 8px 8px;
         font-size: .7em;
+    }
+}
+
+
+// ========================================= SYSTEM MESSAGE ==============================================
+
+@-webkit-keyframes dismiss {0% {top:0px}} /* Safari 4.0 - 8.0 */
+@keyframes dismiss {0% {top:0px}} /* Standard syntax */
+
+.system-message{
+    background-color: $system-msg-bg-color;
+    color: $system-msg-text-color;
+    font-size: $system-msg-text-size;
+
+    &.dismiss{
+        -webkit-animation-name: dismiss; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1s; /*Safari 4.0 - 8.0 */
+        animation-name: dismiss;
+        animation-duration: 1s;
+        transition: 1s;
+        margin-top:-300px;  
+    }
+    
+    .sysmsg-close{
+        transition: 0.4s; font-size: 1rem;
+        cursor:pointer; width:160px; padding:6px 8px; margin:12px auto 4px auto;
+        @include border-radius(28px);
+        border:solid 1px $system-msg-close-bt-text-color;
+        color: $system-msg-close-bt-text-color;
+        &:hover{
+            background-color: $system-msg-close-bt-text-color;
+            color: #fff;
+        }
     }
 }

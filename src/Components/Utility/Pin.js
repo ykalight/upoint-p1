@@ -8,7 +8,8 @@ let pinStyle = {
     position:'absolute',
     right:'4px',
     top:'4px',
-    cursor:'pointer' 
+    cursor:'pointer',
+    zIndex:'999'
 }
 
 class Pin extends Component {
@@ -39,7 +40,7 @@ class Pin extends Component {
     render() {
 
         return (
-            <div style={pinStyle} title="Pin to Dashboard" className={`${this.state.pinclass} ficon-pin upoint-ficon`} onClick={this._toggle}>
+            <div style={pinStyle} title="Pin to Dashboard" className={`${this.state.pinclass} ${this.props.classname} ficon-pin upoint-ficon`} onClick={this._toggle}>
                 
                 {this.state.msgShow && (<PopoverSoft msg="Pinned" />)}
             </div>

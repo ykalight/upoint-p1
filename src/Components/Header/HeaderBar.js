@@ -78,6 +78,7 @@ class HeaderBar extends Component {
                     <Profile />
                     <Search />
                 </div>
+
             </header>
         );
     }

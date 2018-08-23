@@ -2,7 +2,7 @@
   {
     "icon": "",
     "title": "Your 401(k) account",
-    "text": "",
+    "text": "Lorem ipsum retirement text here",
     "visual": "tempGraph_01",
     "nxlink": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/dc_home.html?flag=savplan",
     "expand": 
@@ -32,7 +32,7 @@
   {
     "icon": "",
     "title": "Your health plans & deductibles",
-    "text": "",
+    "text": "Ipsum lorem text can go here",
     "visual": "tempGraph_02",
     "nxlink": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/hm_home.html",
     "expand":

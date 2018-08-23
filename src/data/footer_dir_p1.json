@@ -1,0 +1,90 @@
+[
+    {
+        "title": "Explore Your Benefits",
+        "links": 
+        [
+            {
+                "label": "Health & Insurance",
+                "destination": "/blank"
+            },
+            {
+                "label": "Savings & Retirement",
+                "destination": "/blank"
+            },
+            {
+                "label": "Pay & Time",
+                "destination": "/blank"
+            },
+            {
+                "label": "Reimbursement",
+                "destination": "/blank"
+            },
+            {
+                "label": "Job & Career",
+                "destination": "/blank"
+            },
+            {
+                "label": "Other Benefits",
+                "destination": "/blank"
+            }
+        ]
+    },
+    {
+        "title": "Additional Information",
+        "links": 
+        [
+            {
+                "label": "Legal Information",
+                "destination": "/blank"
+            },
+            {
+                "label": "Privacy Statement",
+                "destination": "/blank"
+            },
+            {
+                "label": "Cookie Notice",
+                "destination": "/blank"
+            }
+        ]
+    },
+    {
+        "title": "Get in Touch",
+        "links": 
+        [
+            {
+                "label": "My Expert",
+                "destination": "/blank"
+            },
+            {
+                "label": "Contact Us",
+                "destination": "/blank"
+            },
+            {
+                "label": "Chat",
+                "destination": "/blank"
+            },
+            {
+                "label": "Feedback",
+                "destination": "/blank"
+            }
+        ]
+    },
+    {
+        "title": "Language",
+        "links": 
+        [
+            {
+                "label": "English",
+                "destination": "/blank"
+            },
+            {
+                "label": "Español",
+                "destination": "/blank"
+            },
+            {
+                "label": "French",
+                "destination": "/blank"
+            }
+        ]
+    }
+ ]

@@ -32,7 +32,7 @@ header{
             #mnav{
                 display:block;
                 padding-top: 8px;
-                border-right: $mobile-nav-bt-divider;
+                // border-right: $mobile-nav-bt-divider;
                 margin-right: 12px;
             }
             .Head-profile, .Head-chat{display:none}
@@ -93,6 +93,16 @@ header{
     .Head-profile, .Head-message, .Head-chat{
         &:hover{
             background-color: lighten($header-bg-color, 4%)
+        }
+    }
+}
+.slide-pane__content nav{
+    .inmobile{
+        > a{padding:8px 6px; display:flex; align-items:center;
+            span{display:inline-block}
+        }
+        .Head-profile, .Head-chat{
+            background-color: transparent
         }
     }
 }

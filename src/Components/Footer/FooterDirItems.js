@@ -48,7 +48,6 @@ class FooterDirItems extends Component {
                     {foot_links}
                 </ul>
             </MediaQuery>
-            
         </div>
     );
   }

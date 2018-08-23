@@ -17,6 +17,7 @@ import HeaderBar from './Components/Header/HeaderBar';
 import Banner from './Components/Header/Banner';
 import Footer from './Components/Footer/Footer';
 import IvaTrigger from './Components/Utility/IvaTrigger';
+import SystemMessage from './Components/Utility/SystemMessage';
 
 
 
@@ -33,8 +34,10 @@ class App extends Component {
       relateddata_Savings: [],
       relateddata_Health: [],
       relateddata_Work: [],
-      toolboxedit_show: false
+      toolboxedit_show: false,
+      showMsg: true
     }
+    this.dismissMsg = this.dismissMsg.bind(this);
   }
 
 
@@ -56,6 +59,11 @@ class App extends Component {
     Modal.setAppElement(this.el);
   }
 
+  dismissMsg() {
+    console.log("ddd");
+    this.setState({ showMsg: !this.state.showMsg})
+  }
+
   render() {
     return (
       <Router basename={`${process.env.PUBLIC_URL}`} onUpdate={() => window.scrollTo(0, 0)}>
@@ -74,6 +82,18 @@ class App extends Component {
                 <Footer />
               </div>
               {/* {this.state.toolboxedit_show && (<ToolboxEditor show={this.state.toolboxedit_show} onClickClose={this.hideToolEdit} />)} */}
+            </main>
+          )}} />
+
+          <Route exact strict path='/x' render={()=> {return(
+            <main>
+              {this.state.showMsg && (<SystemMessage onClick={this.dismissMsg} />)}
+              <Banner />
+              <div className="content" style={homeContentStyle}>
+                <CardsNx cardsdata={this.state.cardsdata} />                             
+                <Related relateddata={this.state.relateddata} />
+                <Footer />
+              </div>
             </main>
           )}} />
 

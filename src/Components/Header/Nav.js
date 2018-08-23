@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import uuid from 'uuid';
 import nav_directory from '../../data/nav_directory';
 import NavItems from './NavItems';
+import Profile from './Profile';
+import Chat from './Chat';
+import MediaQuery from 'react-responsive';
+import {Link} from 'react-router-dom'; 
 
 
 class Nav extends Component {
@@ -33,7 +37,14 @@ class Nav extends Component {
 
     return (
         <nav style={{textAlign:'left'}} className={this.props.className}>
-            <ul>{navItems}</ul>
+            <ul>
+                {navItems}
+                <MediaQuery maxWidth={740}>
+                    <li className="inmobile"><Link to="/blank"><Profile /> <span>My Profile</span></Link></li>
+                    <li className="inmobile"><Link to="/blank"><Chat /> <span>Chat</span></Link></li>
+                </MediaQuery>
+            </ul>
+            
         </nav>
     );
   }

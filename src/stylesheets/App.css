@@ -586,7 +586,6 @@ header > div .Head-logo img {
   header > div #mnav {
     display: block;
     padding-top: 8px;
-    border-right: solid 1px rgba(255, 255, 255, 0.2);
     margin-right: 12px;
   }
   header > div .Head-profile, header > div .Head-chat {
@@ -650,6 +649,18 @@ header .Head-profile:hover, header .Head-message:hover, header .Head-chat:hover 
   background-color: rgba(7, 35, 71, 0.8);
 }
 
+.slide-pane__content nav .inmobile > a {
+  padding: 8px 6px;
+  display: flex;
+  align-items: center;
+}
+.slide-pane__content nav .inmobile > a span {
+  display: inline-block;
+}
+.slide-pane__content nav .inmobile .Head-profile, .slide-pane__content nav .inmobile .Head-chat {
+  background-color: transparent;
+}
+
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes navlink {
   0% {
@@ -711,25 +722,100 @@ nav li div li a {
 @media only screen and (max-width: 920px) {
   .slide-pane__header {
     visibility: hidden;
+    flex: 0 0 54px !important;
   }
 
   .slide-pane__content {
-    padding: 4px 12px 0 0;
+    padding: 0 !important;
   }
   .slide-pane__content nav {
     width: 100%;
-    margin: 0;
+    margin: 20px 0 0 0;
     padding: 0;
   }
   .slide-pane__content nav li {
-    margin: 0;
+    margin: 0 auto;
+    width: 96%;
     font-size: 10empx;
     font-size: 1emrem;
     font-family: FSThriveElliotWeb-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 0.9em !important;
+    font-size: 0.9em;
     display: block;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.14);
+  }
+  .slide-pane__content nav li a {
     padding: 18px;
-    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+    display: block;
+  }
+  @-webkit-keyframes mmore {
+    0% {
+      background-color: transparent;
+      margin-left: -152px;
+    }
+  }
+  @keyframes mmore {
+    0% {
+      background-color: transparent;
+      margin-left: -152px;
+    }
+  }
+  .slide-pane__content nav li div.mnav-more {
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    -webkit-animation-name: mmore;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: mmore;
+    animation-duration: 0.5s;
+    background-color: #212e3d;
+    color: #fff;
+    top: 0;
+  }
+  .slide-pane__content nav li div.mnav-more li {
+    width: 96%;
+    margin: 0 auto;
+    font-size: 1em;
+  }
+
+  @-webkit-keyframes mnav1 {
+    0% {
+      opacity: 0;
+    }
+  }
+  @keyframes mnav1 {
+    0% {
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes mnav2 {
+    0% {
+      opacity: 0;
+    }
+  }
+  @keyframes mnav2 {
+    0% {
+      opacity: 0;
+    }
+  }
+  .mnav-close {
+    -webkit-animation-name: mnav1;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: mnav1;
+    animation-duration: 0.5s;
+  }
+
+  .mnav-hamb {
+    -webkit-animation-name: mnav2;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: mnav2;
+    animation-duration: 0.5s;
   }
 }
 .ReactModalPortal .navSlider {
@@ -845,6 +931,10 @@ nav li div li a {
   font-size: 1.3em;
   color: #555555;
   padding-right: 52px;
+}
+.Card .cardTop h3 p {
+  font-size: 68%;
+  color: #838383;
 }
 .Card .cardTop .alert {
   width: 20px;
@@ -1150,19 +1240,6 @@ nav li div li a {
 .quicklinks .quicklinkItem {
   margin: 18px;
   position: relative;
-}
-.quicklinks .ficon-pin {
-  font-size: 1.2em;
-  color: #b5b5b5;
-  /* usage @import border-radius(12px) */
-  -webkit-border-radius: 100px;
-  border-radius: 100px;
-  background-clip: padding-box;
-  /* stops bg color from leaking outside the border: */
-}
-.quicklinks .ficon-pin.pinned {
-  color: #ea7600;
-  font-weight: bold;
 }
 
 .button {
@@ -1527,7 +1604,7 @@ nav li div li a {
   font-size: 8px;
   font-size: 0.8rem;
   font-family: FSThriveElliotWeb-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #555555;
+  color: #9b7d00;
   padding: 12px 24px;
   background-color: #ffdc49;
   text-align: center;
@@ -1592,11 +1669,19 @@ nav li div li a {
 }
 .Head-profile .profile-dropdown .profile-header a {
   font-size: 0.9em;
-  padding: 0 24px;
+  padding: 8px 28px;
   color: #c00;
+  margin-left: 28px;
+  /* usage @import border-radius(12px) */
+  -webkit-border-radius: 24px;
+  border-radius: 24px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  border: solid 1px #c00;
 }
 .Head-profile .profile-dropdown .profile-header a:hover {
   color: #ff5c5c;
+  border-color: #ff5c5c;
 }
 .Head-profile .profile-dropdown ul {
   min-width: 200px;
@@ -1605,13 +1690,13 @@ nav li div li a {
 .Head-profile .profile-dropdown ul label {
   display: block;
   text-align: left;
-  font-size: 8px;
-  font-size: 0.8rem;
+  font-size: 8.8px;
+  font-size: 0.88rem;
   font-family: FSThriveElliotWeb-Bold, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222;
 }
 .Head-profile .profile-dropdown li a {
-  font-size: 0.8em;
+  font-size: 0.88em;
   color: #555;
   display: block;
   text-align: left;
@@ -1632,18 +1717,17 @@ footer a {
 }
 footer > div {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 0;
-  grid-template-areas: "f-directory f-directory f-directory f-social" "f-switch f-switch f-switch f-switch" "f-fhr f-fhr f-fhr f-fhr" "f-logo f-links f-links f-links" "f-copyright f-copyright f-copyright f-copyright";
+  justify-content: space-between;
+  grid-template-areas: "f-directory f-directory f-directory f-directory f-social" "f-fhr f-fhr f-fhr f-fhr f-fhr" "f-logo f-logo f-logo f-logo f-switch" "f-copyright f-copyright f-copyright f-copyright f-copyright";
 }
 footer > div .footer-directory {
   grid-area: f-directory;
   display: flex;
-  justify-items: start;
+  justify-content: space-between;
   margin-bottom: 18px;
 }
 footer > div .footer-directory > div {
-  width: 33%;
   padding: 0 12px;
 }
 footer > div .footer-directory label {
@@ -1668,22 +1752,23 @@ footer > div .flogo img {
   width: 100px;
   margin-bottom: 8px;
 }
-footer > div .links {
-  grid-area: f-links;
-  justify-self: right;
-}
-footer > div .links li {
-  display: inline;
-  margin: 0 0 0 2em;
-}
 footer > div .social {
   grid-area: f-social;
   justify-self: start;
 }
 footer > div .tempSwitch {
   grid-area: f-switch;
-  padding: 0 12px;
+  margin: 8px 0;
+}
+footer > div .tempSwitch a {
+  padding: 6px 18px;
   font-size: 0.95em;
+  /* usage @import border-radius(12px) */
+  -webkit-border-radius: 28px;
+  border-radius: 28px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  border: solid 1px #8294a9;
 }
 footer > div .copyright {
   grid-area: f-copyright;
@@ -1703,30 +1788,10 @@ footer > div .fhr {
   footer > div {
     grid-template-columns: unset;
     grid-template-rows: auto;
-    grid-template-areas: "f-directory" "f-switch" "f-fhr" "f-links" "f-social" "f-logo" "f-copyright";
+    grid-template-areas: "f-directory f-directory f-directory f-directory" "f-fhr f-fhr f-fhr f-fhr" "f-logo f-logo f-logo  f-social" "f-copyright f-copyright f-copyright f-copyright" "f-switch f-switch f-switch f-switch";
   }
-  footer > div .flogo {
-    justify-self: center;
-  }
-  footer > div .flogo img {
-    width: 80px;
-    margin: 18px auto 8px auto;
-  }
-  footer > div .social {
-    justify-self: center;
-    margin: 28px 0;
-    text-align: center;
-  }
-  footer > div .links {
-    justify-self: center;
-    margin-bottom: 8px;
-  }
-  footer > div .links li {
-    margin: 0 2em;
-  }
-  footer > div .copyright {
-    margin-top: 12px;
-    padding: 12px 0 0 0;
+  footer > div .tempSwitch {
+    margin: 18px 0;
     text-align: center;
   }
 }
@@ -1735,19 +1800,28 @@ footer > div .fhr {
     padding: 12px;
   }
   footer > div {
-    grid-template-areas: "f-directory" "f-fhr" "f-links" "f-switch" "f-social" "f-logo" "f-copyright";
+    grid-template-columns: 1fr;
+    grid-template-areas: "f-directory" "f-fhr" "f-social" "f-logo" "f-copyright" "f-switch";
+  }
+  footer > div .flogo {
+    justify-self: center;
+  }
+  footer > div .flogo img {
+    width: 80px;
+    margin: 4px auto;
+  }
+  footer > div .social {
+    justify-self: center;
+    margin: 48px 0;
+    text-align: center;
+  }
+  footer > div .copyright {
+    margin: 8px 0 8px 0;
+    padding: 8px 0;
+    text-align: center;
   }
   footer > div .tempSwitch {
-    padding: 0;
-  }
-  footer > div .links {
-    justify-self: unset;
-  }
-  footer > div .links li {
-    margin: 0;
-    padding: 14px 0;
-    display: block;
-    border-bottom: solid 1px #54667b;
+    margin: 38px 0;
   }
   footer > div .footer-directory {
     display: block;
@@ -1763,10 +1837,7 @@ footer > div .fhr {
   footer > div .footer-directory > div {
     width: 100%;
     padding: 0;
-  }
-  footer > div .footer-directory .border {
     border-bottom: solid 1px #54667b;
-    border-top: solid 1px #54667b;
   }
   footer > div .footer-directory label {
     margin-bottom: 0;
@@ -1776,11 +1847,30 @@ footer > div .fhr {
     transform: rotate(45deg) scale(1.08);
   }
   footer > div .footer-directory li {
-    padding: 12px 0;
+    padding: 12px 0 12px 16px;
   }
   footer > div .fhr {
     display: none;
   }
+}
+
+.ficon-pin {
+  font-size: 1.2em;
+  color: #b5b5b5;
+  /* usage @import border-radius(12px) */
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+}
+.ficon-pin.pinned {
+  color: #ea7600;
+  font-weight: bold;
+}
+
+.cardpin {
+  top: 18px !important;
+  right: 22px !important;
 }
 
 .iva-trigger {
@@ -1811,6 +1901,53 @@ footer > div .fhr {
     padding: 4px 8px 8px 8px;
     font-size: 0.7em;
   }
+}
+
+@-webkit-keyframes dismiss {
+  0% {
+    top: 0px;
+  }
+}
+/* Safari 4.0 - 8.0 */
+@keyframes dismiss {
+  0% {
+    top: 0px;
+  }
+}
+/* Standard syntax */
+.system-message {
+  background-color: #ffd216;
+  color: #222;
+  font-size: 1em;
+}
+.system-message.dismiss {
+  -webkit-animation-name: dismiss;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s;
+  /*Safari 4.0 - 8.0 */
+  animation-name: dismiss;
+  animation-duration: 1s;
+  transition: 1s;
+  margin-top: -300px;
+}
+.system-message .sysmsg-close {
+  transition: 0.4s;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 160px;
+  padding: 6px 8px;
+  margin: 12px auto 4px auto;
+  /* usage @import border-radius(12px) */
+  -webkit-border-radius: 28px;
+  border-radius: 28px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  border: solid 1px #222;
+  color: #222;
+}
+.system-message .sysmsg-close:hover {
+  background-color: #222;
+  color: #fff;
 }
 
 .visual > div {

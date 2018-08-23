@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import uuid from 'uuid';
 import CardNxItem from './CardNxItem';
 import Button from '../Common/Button';
-// import Quicklink from './Quicklink';
 import QuicklinkItem from './QuicklinkItem';
 import dataQuicklinks from '../../data/quicklinks';
 import scrollToComponent from 'react-scroll-to-component';

@@ -1,28 +1,5 @@
 [
     {
-        "title": "Savings & Retirement",
-        "destination": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/sr_home.html",
-        "links": 
-        [
-            {
-                "label": "401(k) Savings",
-                "destination": "/blank"
-            },
-            {
-                "label": "Pension",
-                "destination": "/blank"
-            },
-            {
-                "label": "Nonqualified Savings",
-                "destination": "/blank"
-            },
-            {
-                "label": "Financial Education",
-                "destination": "/blank"
-            }
-        ]
-    },
-    {
         "title": "Health & Insurance",
         "destination": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/hm_home.html",
         "links": 
@@ -50,7 +27,30 @@
         ]
     },
     {
-        "title": "Work Management",
+        "title": "Savings & Retirement",
+        "destination": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/sr_home.html",
+        "links": 
+        [
+            {
+                "label": "401(k) Savings",
+                "destination": "/blank"
+            },
+            {
+                "label": "Pension",
+                "destination": "/blank"
+            },
+            {
+                "label": "Nonqualified Savings",
+                "destination": "/blank"
+            },
+            {
+                "label": "Financial Education",
+                "destination": "/blank"
+            }
+        ]
+    },
+    {
+        "title": "Pay & Time",
         "destination": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/pt_home.html",
         "links": 
         [
@@ -86,7 +86,7 @@
                 "destination": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/ob_home.html"
             },
             {
-                "label": "Reimbursement Account",
+                "label": "Reimbursement",
                 "destination": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/ysa_ra_home.html"
             },
             {

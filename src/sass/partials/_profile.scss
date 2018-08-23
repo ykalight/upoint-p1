@@ -33,17 +33,22 @@
                 font-size:1.3em; text-align:left; color: $header-profile-header-name-color; padding-right:24px; border-right:solid 1px $app-medgray;
                 .profile-log{color: lighten($header-profile-header-name-color, 22%); font-size:48%}
             }
-            a{font-size:.9em; padding: 0 24px; color: $header-profile-logout-color;
-                &:hover{color: lighten($header-profile-logout-color, 28%)}
+            a{font-size:.9em; padding: 8px 28px; color: $header-profile-logout-color; margin-left:28px;
+                @include border-radius($button-border-radius);
+                border: solid 1px $header-profile-logout-color;
+                &:hover{
+                    color: lighten($header-profile-logout-color, 28%);
+                    border-color: lighten($header-profile-logout-color, 28%);
+                }
             }
         }
         
         ul{min-width:200px; padding:18px 24px;
-            label{display:block; text-align:left; @include font(.8, 'Bold'); color: $header-profile-header-name-color}
+            label{display:block; text-align:left; @include font(.88, 'Bold'); color: $header-profile-header-name-color}
         }
         li{
             a{
-                font-size:.8em;
+                font-size:.88em;
                 color: $header-profile-menu-text-color;
                 display:block;
                 text-align: left;

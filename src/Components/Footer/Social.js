@@ -7,7 +7,7 @@ class Social extends Component {
 
     return (
         <div className="social">
-        Follow us
+        Stay Connected
         <Link to={"#"}><img src={tempSocial} alt="Social" style={{width: '120px', marginTop: '8px'}} /></Link>
         </div>
     );

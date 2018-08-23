@@ -15,7 +15,9 @@
         transition: 0.4s;
         @include border-radius($card-border-radius);
 
-        h3{font-size: $card-title-text-size; color: $card-title-text-color; padding-right:52px}
+        h3{font-size: $card-title-text-size; color: $card-title-text-color; padding-right:52px;
+            p{font-size:68%; color: lighten($card-title-text-color, 18%)}
+        }
         .alert{width:20px; height:40px; background: transparent url('../img/icon_art.svg') -19px -278px no-repeat; background-size:900px}
         .arrow{
             justify-self: center;

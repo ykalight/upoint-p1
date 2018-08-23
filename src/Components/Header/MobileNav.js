@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {MdKeyboardArrowDown, MdKeyboardArrowLeft} from 'react-icons/lib/md';
+import {MdKeyboardArrowLeft, MdMenu} from 'react-icons/lib/md';
 import SlidingPane from 'react-sliding-pane';
 import 'react-sliding-pane/dist/react-sliding-pane.css';
 import Nav from './Nav';
@@ -11,16 +11,15 @@ let menuStyle = {
     textAlign: 'center',
     cursor: 'pointer'
 },
-arrowDownStyle = {width: '18px', height: '18px', display: 'block', margin: 'auto'},
+arrowDownStyle = {width: '28px', height: '28px', display: 'block', margin: '0 auto 7px auto'},
 arrowLeftStyle = {width: '36px', height: '36px', display: 'block', margin: 'auto', marginTop: '-6px'},
 arrowType = 'down',
-drawArrow = <MdKeyboardArrowDown style={arrowDownStyle} />;
+drawArrow = <MdMenu style={arrowDownStyle} />;
 
 class MobileNav extends Component {
     constructor(){
         super();
         this.state = {
-            displayclass: '',
             isPaneOpenLeft: false
         }
         this._toggler = this._toggler.bind(this);
@@ -37,14 +36,8 @@ class MobileNav extends Component {
         }
 
         toggleArrow() {
-            // this.state.isPaneOpenLeft ? arrowType = <MdKeyboardArrowLeft style={arrowLeftStyle} /> : arrowType = <MdKeyboardArrowDown style={arrowDownStyle} />;
-            
-            this.setState(
-                {displayclass: this.state.displayclass === '' ? 'hide' : ''}
-            );
-
             arrowType === 'down' ? arrowType = 'left' : arrowType = 'down';
-            arrowType === 'left' ? drawArrow = <MdKeyboardArrowLeft style={arrowLeftStyle} /> : drawArrow = <MdKeyboardArrowDown style={arrowDownStyle} />;
+            arrowType === 'left' ? drawArrow = <MdKeyboardArrowLeft style={arrowLeftStyle} className="mnav-close" /> : drawArrow = <MdMenu style={arrowDownStyle} className="mnav-hamb" />;
         }
 
         componentDidMount() {
@@ -59,7 +52,7 @@ class MobileNav extends Component {
         resetarrow() {
             this.setState({displayclass: ''});
             arrowType = 'down';
-            drawArrow = <MdKeyboardArrowDown style={arrowDownStyle} />;
+            drawArrow = <MdMenu style={arrowDownStyle} />;
         }
         removemenu() {
             // Hide menu on resize
@@ -70,10 +63,8 @@ class MobileNav extends Component {
     render() {
 
         return (
-            <div id="mnav" style={menuStyle} onClick={this._toggler}>
-                <div className={this.state.displayclass} style={{textALign:'center'}}>Menu</div>
-                {drawArrow}
-
+            <div id="mnav" style={menuStyle}>
+                <div onClick={this._toggler}>{drawArrow}</div>
                 <SlidingPane
                     className='navSlider'
                     overlayClassName='navSliderMask'
@@ -81,7 +72,8 @@ class MobileNav extends Component {
                     title=''
                     from='left'
                     width='90%'
-                    onRequestClose={ () => this.setState({ isPaneOpenLeft: false }) }>
+                    onRequestClose={ () => this._toggler() }>
+                    {/* onRequestClose={ () => this.setState({ isPaneOpenLeft: false }) }> */}
                     <Nav />
                 </SlidingPane>
             </div>

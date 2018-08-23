@@ -46,10 +46,4 @@
     }
 
     .quicklinkItem{margin:18px; position:relative;}
-    .ficon-pin{ 
-        font-size:1.2em;
-        color: $quicklink-pin-color;
-        @include border-radius(100px);
-        &.pinned{color: $quicklink-pin-active-color; font-weight:bold}   
-    }
 }

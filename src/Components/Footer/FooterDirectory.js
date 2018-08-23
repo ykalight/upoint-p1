@@ -1,61 +1,38 @@
 import React, { Component } from 'react';
-import {MdAdd} from 'react-icons/lib/md';
-import MediaQuery from 'react-responsive';
+import uuid from 'uuid';
+import FooterDirItems from './FooterDirItems';
+import footer_directory from '../../data/footer_dir_p1';
 
 class FooterDirectory extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            ulshow: 'none',
-            labelClass: ""
+            footerdir_data: []
         };
     }
 
-    toggleShow(e){
+    getData(){
         this.setState({
-            ulshow: this.state.ulshow === "none" ? "" : "none",
-            labelClass: this.state.labelClass === "" ? "active" : "",
-        });
-        e.preventDefault();
+        footerdir_data: footer_directory
+        })
+      }
+    
+    componentWillMount(){
+        this.getData();
     }
 
   render() {
     
+    let footerItems;
+    footerItems = this.state.footerdir_data.map(fdata => {
+        return (
+            <FooterDirItems key={uuid.v4()} fdata={fdata} />
+        )
+    });
+    
     return (
         <div className="footer-directory">
-            <div>
-                <ul>
-                    <li><a href="/blank">Savings & Retirement</a></li>
-                    <li><a href="/blank">Health & Insurance</a></li>
-                    <li><a href="/blank">Work Management</a></li>
-                    <li><a href="/blank">Life Changes</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="/blank">Your Well-Being</a></li>
-                    <li><a href="/blank">Perks & Discounts</a></li>
-                    <li><a href="/blank">Reimbursement Account</a></li>
-                    <li><a href="/blank">Other Benefits</a></li>
-                </ul>
-            </div>
-            <div className="border">
-                <MediaQuery minWidth={741}>
-                    <label>Language</label>
-                    <ul>
-                        <li><a href="/blank">English</a></li>
-                        <li><a href="/blank">Español</a></li>
-                    </ul>
-                </MediaQuery>
-
-                <MediaQuery maxWidth={740}>
-                    <label className={this.state.labelClass} onClick={this.toggleShow.bind(this)} style={{cursor:'pointer'}}>Language<MdAdd className="expand"/></label>
-                    <ul style={{display: this.state.ulshow}}>
-                        <li><a href="/blank">English</a></li>
-                        <li><a href="/blank">Español</a></li>
-                    </ul>
-                </MediaQuery>
-            </div>
+            {footerItems}
         </div>
     );
   }
