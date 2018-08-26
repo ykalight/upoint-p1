@@ -6,6 +6,8 @@ import QuicklinkItem from './QuicklinkItem';
 import dataQuicklinks from '../../data/quicklinks';
 import scrollToComponent from 'react-scroll-to-component';
 
+import CardTimeoff from './CardTimeoff';
+
 class CardsNx extends Component {
   constructor(props){
     super(props);
@@ -83,8 +85,9 @@ _showAll() {
               {quickItems}
             </div>
           </div>
-
+          
           {cardItems}
+          <CardTimeoff showpin={this.state.showpin} />
           
           <div className="more">
             <Button addclass="button bt-outline" destination="#" isShowAll={this.state.showall} label={this.state.btLabel} onClick={this.state.showall ? this._showDefault : this._showAll} />

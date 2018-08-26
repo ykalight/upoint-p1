@@ -1,7 +1,7 @@
 [
   {
     "icon": "",
-    "title": "Your 401(k) account",
+    "title": "401(k) account",
     "text": "Lorem ipsum retirement text here",
     "visual": "tempGraph_01",
     "nxlink": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/dc_home.html?flag=savplan",
@@ -24,76 +24,6 @@
             {
               "label": "Change Investments",
               "classname": "barchart",
-              "destination": "#"
-            }
-        ]
-      }
-  },
-  {
-    "icon": "",
-    "title": "Your health plans & deductibles",
-    "text": "Ipsum lorem text can go here",
-    "visual": "tempGraph_02",
-    "nxlink": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/hm_home.html",
-    "expand":
-      {
-        "title": "Your Health Plans",
-        "visual": "tempGraph_02dt",
-        "actions": 
-        [
-            {
-              "label": "Insurance Cards",
-              "classname": "idcard",
-              "destination": "#"
-            },
-            {
-              "label": "Change Beneficiaries",
-              "classname": "people",
-              "destination": "#"
-            },
-            {
-              "label": "Chat with a Benefits Specialist",
-              "classname": "person",
-              "destination": "#"
-            }
-        ]
-      }
-  },
-  {
-    "icon": "",
-    "title": "Your well-being score has improved 47%",
-    "text": "",
-    "visual": "tempGraph_03",
-    "nxlink": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/biometric_scorecard.html",
-    "expand":
-      {
-        "title": "Your Wellbeing Snapshot",
-        "visual": "tempGraph_03dt",
-        "actions": 
-        [
-            {
-              "label": "Wellness Tips and Advice",
-              "classname": "person",
-              "destination": "#"
-            }
-        ]
-      }
-  },
-  {
-    "icon": "",
-    "title": "You have 50.5 hours of unused PTO",
-    "text": "",
-    "visual": "tempGraph_07",
-    "nxlink": "#",
-    "expand":
-      {
-        "title": "Your Time-Off Snapshot",
-        "visual": "tempGraph_07dt",
-        "actions": 
-        [
-            {
-              "label": "Timesheet",
-              "classname": "time",
               "destination": "#"
             }
         ]

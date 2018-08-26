@@ -5,6 +5,7 @@ import Modal from 'react-modal';
 import data from './data/card_home.json';
 import 'react-drawer/lib/react-drawer.css';
 import './stylesheets/App.css';
+import {Link} from 'react-router-dom';
 
 import dataRelated from './data/related_home.json';
 import dataRelated_Savings from './data/related_savings.json';
@@ -102,7 +103,7 @@ class App extends Component {
               <div style={{padding:'100px'}}>
                 <p>B L A N K - P A G E</p>
                 <br /><br />
-                <a href="/">Go back</a>
+                <Link to="/">Go back</Link>
                 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
               </div>
               <Footer />

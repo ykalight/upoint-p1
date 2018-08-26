@@ -9,21 +9,14 @@ class CardNxItem extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-            active: 'Card',
-            showpin: null
+            active: 'Card'
         };
-    }
-
-    componentDidMount() {
-        this.setState({
-            showpin: this.props.showpin
-        })
     }
 
     render() {
         return (
         <FadeIn>
-            {this.state.showpin && (<Pin classname="cardpin" />)}
+            {this.props.showpin && (<Pin classname="cardpin" />)}
             <a href={this.props.card.nxlink}>
                 <div className={this.state.active} > 
                     <div className="cardTop nonexpand">

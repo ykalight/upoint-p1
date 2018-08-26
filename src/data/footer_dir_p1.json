@@ -1,18 +1,18 @@
 [
     {
-        "title": "Explore Your Benefits",
+        "title": "Explore your benefits",
         "links": 
         [
             {
-                "label": "Health & Insurance",
+                "label": "Health & insurance",
                 "destination": "/blank"
             },
             {
-                "label": "Savings & Retirement",
+                "label": "Savings & retirement",
                 "destination": "/blank"
             },
             {
-                "label": "Pay & Time",
+                "label": "Pay & time",
                 "destination": "/blank"
             },
             {
@@ -20,35 +20,35 @@
                 "destination": "/blank"
             },
             {
-                "label": "Job & Career",
+                "label": "Job & career",
                 "destination": "/blank"
             },
             {
-                "label": "Other Benefits",
+                "label": "Other benefits",
                 "destination": "/blank"
             }
         ]
     },
     {
-        "title": "Additional Information",
+        "title": "Additional information",
         "links": 
         [
             {
-                "label": "Legal Information",
+                "label": "Legal information",
                 "destination": "/blank"
             },
             {
-                "label": "Privacy Statement",
+                "label": "Privacy statement",
                 "destination": "/blank"
             },
             {
-                "label": "Cookie Notice",
+                "label": "Cookie notice",
                 "destination": "/blank"
             }
         ]
     },
     {
-        "title": "Get in Touch",
+        "title": "Get in touch",
         "links": 
         [
             {
@@ -56,7 +56,7 @@
                 "destination": "/blank"
             },
             {
-                "label": "Contact Us",
+                "label": "Contact us",
                 "destination": "/blank"
             },
             {

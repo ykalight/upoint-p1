@@ -42,29 +42,29 @@ class ProfileMenu extends Component {
                     <div className="profile-log">Last login: MAR 26, 2018, 14:02 ET</div>
                 </div>
                 
-                <Link to="#">Log Out</Link>
+                <Link to="#">Log out</Link>
                 <MdClose style={closeIconStyle} onClick={this.props.onClick} />
             </div>
             <div className="profile-blocks">
                 <ul>
                     <label>Roles</label>
                     <li><Link to='#'><MdPermIdentity style={iconStyle} onClick={this.scrollToTop} />Employee (current)</Link></li>
-                    <li><Link to='#'><MdSupervisorAccount style={iconStyle} onClick={this.scrollToTop} />Manager View</Link></li>
-                    <li><Link to='#'><MdPermContactCalendar style={iconStyle} onClick={this.scrollToTop} />HR Professsional</Link></li>
+                    <li><Link to='#'><MdSupervisorAccount style={iconStyle} onClick={this.scrollToTop} />Manager view</Link></li>
+                    <li><Link to='#'><MdPermContactCalendar style={iconStyle} onClick={this.scrollToTop} />HR professsional</Link></li>
                 </ul>
 
                 <ul>
                     <label>Accounts</label>
                     <li><Link to='#'><MdCallToAction style={iconStyle} onClick={this.scrollToTop} />Beneficiary for Patricia</Link></li>
-                    <li><Link to='#'><MdDashboard style={iconStyle} onClick={this.scrollToTop} />Qualified Orders</Link></li>
+                    <li><Link to='#'><MdDashboard style={iconStyle} onClick={this.scrollToTop} />Qualified orders</Link></li>
                 </ul>
 
                 <ul>
-                    <label>My Profile</label>
-                    <li><Link to='#'><MdPortrait style={iconStyle} />Personal Information</Link></li>
-                    <li><Link to='#'><MdNotifications style={iconStyle} />Manage Communications</Link></li>
+                    <label>My profile</label>
+                    <li><Link to='#'><MdPortrait style={iconStyle} />Personal information</Link></li>
+                    <li><Link to='#'><MdNotifications style={iconStyle} />Manage communications</Link></li>
                     <li><Link to='#'><MdPeopleOutline style={iconStyle} />Beneficiaries</Link></li>
-                    <li><Link to='#'><MdAccountBalance style={iconStyle} />Financial Institutions</Link></li>
+                    <li><Link to='#'><MdAccountBalance style={iconStyle} />Financial institutions</Link></li>
                 </ul>
             </div>
         </div>

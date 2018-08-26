@@ -1,11 +1,11 @@
 [
     {
-        "title": "Health Plans",
+        "title": "Health plans",
         "icon": "medical",
         "destination": "/blank"
     },
     {
-        "title": "Find a Doctor",
+        "title": "Find a doctor",
         "icon": "person",
         "destination": "/blank"
     },
@@ -15,7 +15,7 @@
         "destination": "/blank"
     },
     {
-        "title": "HSA Account",
+        "title": "Health savings account",
         "icon": "graph-circle",
         "destination": "/blank"
     },
@@ -30,7 +30,7 @@
         "destination": "/blank"
     },
     {
-        "title": "Dependent Care",
+        "title": "Dependent care",
         "icon": "card",
         "destination": "/blank"
     },

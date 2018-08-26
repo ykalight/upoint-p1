@@ -1,0 +1,39 @@
+
+.datavis{
+    display:flex; justify-content:space-between; align-items: flex-start;
+    .dvis-container{
+        color:#222; margin:8px 18px 8px 0; padding-left:18px;
+        &.semiborder{
+            border-left:solid 1px #ccc;
+        }
+    }
+    .dvis-data{
+        font-size:1.8em;
+        letter-spacing:-2px;
+        line-height:15px;
+    }
+    .dvis-small{
+        font-size:50%; letter-spacing:0
+    }
+    label{
+        display:block; max-width:100px; padding-top:6px; @include font(.64, 'Regular'); color:darken($app-green, 8%); text-transform:uppercase
+    }
+
+    @media only screen and (max-width: $xlarge) {
+        .dvis-data{font-size:1.6em}
+    }
+    @media only screen and (max-width: $medium) {
+        .dvis-container{display:none;
+            &:nth-child(1), &:nth-child(2) {display:block}
+        }
+        label{font-size:.5em}
+    }
+    @media only screen and (max-width: $small) {
+        .dvis-container{display:none;
+            &:nth-child(2){display:none}
+        }
+        .dvis-data{font-size:1.4em; line-height:12px;}
+        label{font-size:.44em}
+    }
+}
+

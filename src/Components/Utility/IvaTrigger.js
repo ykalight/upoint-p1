@@ -12,7 +12,7 @@ class IvaTrigger extends Component {
 
         return (
             <div style={style} className="iva-trigger">
-                <span>Need Help?</span>
+                <span>Need help?</span>
             </div>
         );
     }

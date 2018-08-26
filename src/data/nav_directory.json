@@ -1,56 +1,56 @@
 [
     {
-        "title": "Health & Insurance",
+        "title": "Health & insurance",
         "destination": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/hm_home.html",
         "links": 
         [
             {
-                "label": "Health Plans",
+                "label": "Health plans",
                 "destination": "/blank"
             },
             {
-                "label": "Find a Doctor",
+                "label": "Find a doctor",
                 "destination": "/blank"
             },
             {
-                "label": "Life Insurance",
+                "label": "Life insurance",
                 "destination": "/blank"
             },
             {
-                "label": "Health Savings Account",
+                "label": "Health savings account",
                 "destination": "/blank"
             },
             {
-                "label": "Dependent Care Spending Account",
+                "label": "Dependent care spending account",
                 "destination": "/blank"
             }
         ]
     },
     {
-        "title": "Savings & Retirement",
+        "title": "Savings & retirement",
         "destination": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/sr_home.html",
         "links": 
         [
             {
-                "label": "401(k) Savings",
+                "label": "401(k) savings",
                 "destination": "/blank"
             },
             {
-                "label": "Pension",
+                "label": "pension",
                 "destination": "/blank"
             },
             {
-                "label": "Nonqualified Savings",
+                "label": "Nonqualified savings",
                 "destination": "/blank"
             },
             {
-                "label": "Financial Education",
+                "label": "Financial education",
                 "destination": "/blank"
             }
         ]
     },
     {
-        "title": "Pay & Time",
+        "title": "Pay & time",
         "destination": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/pt_home.html",
         "links": 
         [
@@ -59,11 +59,11 @@
                 "destination": "/blank"
             },
             {
-                "label": "Manage Performance Goals",
+                "label": "Manage performance goals",
                 "destination": "/blank"
             },
             {
-                "label": "Retirement Planning",
+                "label": "retirement planning",
                 "destination": "/blank"
             }
         ]
@@ -74,15 +74,15 @@
         "links": 
         [
             {
-                "label": "Life Changes",
+                "label": "Life changes",
                 "destination": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/le_changes.html"
             },
             {
-                "label": "Your Well-Being",
+                "label": "Your well-being",
                 "destination": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/wl_home.html"
             },
             {
-                "label": "Perks & Discounts",
+                "label": "Perks & discounts",
                 "destination": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/ob_home.html"
             },
             {
@@ -90,7 +90,7 @@
                 "destination": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/ysa_ra_home.html"
             },
             {
-                "label": "Other Benefits",
+                "label": "Other benefits",
                 "destination": "http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/jc_home.html"
             }
         ]

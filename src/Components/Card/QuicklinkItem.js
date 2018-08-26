@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import FadeIn from 'react-fade-in';
 import Pin from '../Utility/Pin';
+import {Link} from 'react-router-dom';
 
 class QuicklinkItem extends Component {
     constructor(){
@@ -22,10 +23,10 @@ class QuicklinkItem extends Component {
             <div className="quicklinkItem">
                 {this.state.showpin && (<Pin />)}
                 
-                <a href={this.props.ql.destination}>
+                <Link to={this.props.ql.destination}>
                     <div className={`ficon-${this.props.ql.icon} upoint-ficon ql`}></div>
                     <label>{this.props.ql.title}</label>
-                </a>
+                </Link>
             </div>
             </FadeIn>
         );

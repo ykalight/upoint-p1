@@ -915,7 +915,7 @@ nav li div li a {
 }
 .Card .cardTop {
   display: grid;
-  grid-template-columns: 30px 2fr 2fr 80px;
+  grid-template-columns: 30px 37% auto 80px;
   grid-gap: 18px;
   align-items: center;
   min-height: 130px;
@@ -928,7 +928,7 @@ nav li div li a {
   /* stops bg color from leaking outside the border: */
 }
 .Card .cardTop h3 {
-  font-size: 1.3em;
+  font-size: 1.4em;
   color: #555555;
   padding-right: 52px;
 }
@@ -999,7 +999,7 @@ nav li div li a {
     padding: 18px 8px;
   }
   .Card .cardTop h3 {
-    font-size: 1.1em;
+    font-size: 1.2em;
     padding-right: 46px;
   }
   .Card .cardTop .arrow a span {
@@ -1031,7 +1031,7 @@ nav li div li a {
   }
   .Card .cardTop {
     min-height: 90px;
-    grid-template-columns: 20px auto 100px 40px;
+    grid-template-columns: 20px auto 120px 40px;
     grid-gap: 8px;
     /* usage @import border-radius(12px) */
     -webkit-border-radius: 0;
@@ -1046,7 +1046,6 @@ nav li div li a {
     background-size: 640px;
   }
   .Card .cardTop h3 {
-    font-size: 1em;
     padding-right: 12px;
   }
   .Card .cardTop .arrow :first-child {
@@ -1056,7 +1055,7 @@ nav li div li a {
 }
 @media only screen and (max-width: 480px) {
   .Card .cardTop h3 {
-    font-size: 0.9em;
+    font-size: 1em;
   }
 }
 
@@ -1706,6 +1705,70 @@ nav li div li a {
   color: #2bafd7;
 }
 
+.datavis {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.datavis .dvis-container {
+  color: #222;
+  margin: 8px 18px 8px 0;
+  padding-left: 18px;
+}
+.datavis .dvis-container.semiborder {
+  border-left: solid 1px #ccc;
+}
+.datavis .dvis-data {
+  font-size: 1.8em;
+  letter-spacing: -2px;
+  line-height: 15px;
+}
+.datavis .dvis-small {
+  font-size: 50%;
+  letter-spacing: 0;
+}
+.datavis label {
+  display: block;
+  max-width: 100px;
+  padding-top: 6px;
+  font-size: 6.4px;
+  font-size: 0.64rem;
+  font-family: FSThriveElliotWeb-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #8fb22c;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 1180px) {
+  .datavis .dvis-data {
+    font-size: 1.6em;
+  }
+}
+@media only screen and (max-width: 920px) {
+  .datavis .dvis-container {
+    display: none;
+  }
+  .datavis .dvis-container:nth-child(1), .datavis .dvis-container:nth-child(2) {
+    display: block;
+  }
+  .datavis label {
+    font-size: 0.5em;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .datavis .dvis-container {
+    display: none;
+  }
+  .datavis .dvis-container:nth-child(2) {
+    display: none;
+  }
+  .datavis .dvis-data {
+    font-size: 1.4em;
+    line-height: 12px;
+  }
+  .datavis label {
+    font-size: 0.44em;
+  }
+}
+
 footer {
   background-color: #2f4258;
   color: #8294a9;
@@ -1953,7 +2016,9 @@ footer > div .fhr {
 .visual > div {
   width: 100%;
   height: 80px;
-  background: transparent url("../img/tempGraph_01.svg") 0 50% no-repeat;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
   background-size: contain;
 }
 .visual > div#tempGraph_01 {
