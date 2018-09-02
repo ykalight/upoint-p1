@@ -3,6 +3,7 @@ import uuid from 'uuid';
 import {MdAdd} from 'react-icons/lib/md';
 import MediaQuery from 'react-responsive';
 import FooterDirSubItem from './FooterDirSubItem';
+import LanguageSelect from './LanguageSelect';
 
 class FooterDirItems extends Component {
 
@@ -48,6 +49,8 @@ class FooterDirItems extends Component {
                     {foot_links}
                 </ul>
             </MediaQuery>
+
+            {this.props.isLastset && (<LanguageSelect />)}
         </div>
     );
   }

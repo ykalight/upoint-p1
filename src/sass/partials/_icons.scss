@@ -1,5 +1,5 @@
 
-// Icon size preset @(36px): Adjust icon font size at component level is needed.
+// Icon size preset @(36px): Adjust icon font size at component level if needed.
 *[class^="ficon-"]{&:before{font-size:36px}}
 
 .ficon-arrow-down{&:before{content: "\e900"}}

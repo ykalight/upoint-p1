@@ -648,6 +648,22 @@ header .Head-search form > div:before {
 header .Head-profile:hover, header .Head-message:hover, header .Head-chat:hover {
   background-color: rgba(7, 35, 71, 0.8);
 }
+header .Head-message .badge {
+  /* usage @import border-radius(12px) */
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  background-color: #c00;
+  font-size: 6.4px;
+  font-size: 0.64rem;
+  font-family: FSThriveElliotWeb-Bold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 2px;
+  border: solid 0px rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .slide-pane__content nav .inmobile > a {
   padding: 8px 6px;
@@ -1807,6 +1823,18 @@ footer > div .footer-directory li {
 footer > div .footer-directory li a {
   font-size: 0.95em;
 }
+footer > div .footer-directory > div > div label {
+  margin-top: 28px;
+}
+footer > div .footer-directory > div > div .expand {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+footer > div .footer-directory > div > div .active .expand {
+  transform: rotate(180deg) scale(1) translate(0%, 7.6%);
+}
 footer > div .flogo {
   justify-self: start;
   grid-area: f-logo;
@@ -1901,6 +1929,13 @@ footer > div .fhr {
     width: 100%;
     padding: 0;
     border-bottom: solid 1px #54667b;
+  }
+  footer > div .footer-directory > div > div label {
+    margin-top: 0;
+    border-top: solid 1px #54667b;
+  }
+  footer > div .footer-directory > div > div .active .expand {
+    transform: rotate(45deg) scale(1.08) translate(0%, 0%);
   }
   footer > div .footer-directory label {
     margin-bottom: 0;

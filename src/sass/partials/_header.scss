@@ -95,6 +95,16 @@ header{
             background-color: lighten($header-bg-color, 4%)
         }
     }
+
+    .Head-message{
+        .badge{
+            @include border-radius(40px);
+            background-color: $header-badge-color;
+            @include font(.64, 'Bold');
+            padding:2px; border:solid 0px rgba(255, 255, 255, .8);
+            display:flex; align-items: center; justify-content: center;
+        }
+    }
 }
 .slide-pane__content nav{
     .inmobile{

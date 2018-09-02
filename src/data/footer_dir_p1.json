@@ -70,19 +70,19 @@
         ]
     },
     {
-        "title": "Language",
+        "title": "Roles",
         "links": 
         [
             {
-                "label": "English",
+                "label": "Employee (current)",
                 "destination": "/blank"
             },
             {
-                "label": "Español",
+                "label": "Manager view",
                 "destination": "/blank"
             },
             {
-                "label": "French",
+                "label": "HR professional",
                 "destination": "/blank"
             }
         ]

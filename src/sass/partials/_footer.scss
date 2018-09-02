@@ -21,6 +21,19 @@ footer{
             li{padding:6px 0;
                 a{font-size:.95em}
             }
+
+            > div > div{
+                label{margin-top:28px}
+                .expand{
+                    -webkit-transition: -webkit-transform .3s ease;
+                    transition: -webkit-transform .3s ease;
+                    transition: transform .3s ease;
+                    transition: transform .3s ease, -webkit-transform .3s ease;
+                }
+                .active .expand{
+                    transform: rotate(180deg) scale(1) translate(0%, 7.6%);
+                }
+            }
         }
         .flogo{justify-self:start;
             grid-area: f-logo;
@@ -121,6 +134,14 @@ footer{
                     transition: transform .3s ease, -webkit-transform .3s ease;
                 }
                 > div{width:100%; padding:0; border-bottom: solid 1px $footer-divider-color}
+
+                > div > div{
+                    label{margin-top:0; border-top: solid 1px $footer-divider-color}
+                    .active .expand{
+                        transform: rotate(45deg) scale(1.08) translate(0%, 0%);
+                    }
+                }
+
                 display:block;
                 margin-bottom:0;
                 label{margin-bottom:0; padding:14px 0;

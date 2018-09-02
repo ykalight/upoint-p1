@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import iconart from '../../img/icon_art.svg';
+import Badge from './Badge';
 
 let bellStyle ={
+  position: 'relative',
   width: 'auto',
   cursor: 'pointer',
   transition: '0.4s'
@@ -19,6 +21,7 @@ class Message extends Component {
 
     return (
         <div className="Head-message" style={bellStyle}>
+            <Badge count="8" />
             <a title="Messages" href="http://www.hewittsolutions.com/demopack/premierco_upoint/release_7-4/gmc_home.html" style={bellIconStlye}>&nbsp;</a>
         </div>
     );

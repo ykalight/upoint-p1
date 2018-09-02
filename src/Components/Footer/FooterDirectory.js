@@ -23,10 +23,15 @@ class FooterDirectory extends Component {
 
   render() {
     
-    let footerItems;
-    footerItems = this.state.footerdir_data.map(fdata => {
+    let footerItems, lastset;
+    footerItems = this.state.footerdir_data.map((fdata, i) => {
+        
+        if(i === this.state.footerdir_data.length - 1){
+            lastset = true
+        }
+
         return (
-            <FooterDirItems key={uuid.v4()} fdata={fdata} />
+            <FooterDirItems isLastset={lastset} key={uuid.v4()} fdata={fdata} />
         )
     });
     

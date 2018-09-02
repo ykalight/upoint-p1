@@ -104,7 +104,23 @@ class App extends Component {
                 <p>B L A N K - P A G E</p>
                 <br /><br />
                 <Link to="/">Go back</Link>
-                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                <br /><br /><br />
+                <p>B L A N K - P A G E</p>
+                <br /><br />
+                <Link to="/">Go back</Link>
+                <br /><br /><br />
+                <p>B L A N K - P A G E</p>
+                <br /><br />
+                <Link to="/">Go back</Link>
+                <br /><br /><br />
+                <p>B L A N K - P A G E</p>
+                <br /><br />
+                <Link to="/">Go back</Link>
+                <br /><br /><br />
+                <p>B L A N K - P A G E</p>
+                <br /><br />
+                <Link to="/">Go back</Link>
+                <br /><br /><br />
               </div>
               <Footer />
             </main>
