@@ -68,6 +68,7 @@ class HeaderBar extends Component {
     render() {
         return (
 
+            // Need to convert to FLEX box, or provide fallback for GRID.
             <header className={this.state.active} style={activeCardStyle}>
                 <div>
                     <MobileNav />

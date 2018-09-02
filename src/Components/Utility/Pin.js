@@ -25,10 +25,10 @@ class Pin extends Component {
     _toggle(){
         // this.setState({pinclass: this.state.pinclass === "pinned" ? "" : "pinned"})
         if(this.state.pinclass === "pinned"){
-            this.setState({pinclass: "", msgShow: false})
+            this.setState({pinclass: "", msgShow: false});
         } else {
             this.setState({pinclass: "pinned", msgShow: true});
-            this.props.setTimeout(this.clearMsg, 3000)
+            this.props.setTimeout(this.clearMsg, 3000);
         }
     }
 
@@ -40,7 +40,10 @@ class Pin extends Component {
     render() {
 
         return (
-            <div style={pinStyle} title="Pin to Dashboard" className={`${this.state.pinclass} ${this.props.classname} ficon-pin upoint-ficon`} onClick={this._toggle}>
+            <div style={pinStyle} title="Pin to Dashboard" 
+                className={`${this.state.pinclass} ${this.props.classname} ficon-pin upoint-ficon`} 
+                onClick={this._toggle}
+            >
                 
                 {this.state.msgShow && (<PopoverSoft msg="Pinned" />)}
             </div>

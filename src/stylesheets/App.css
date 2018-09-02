@@ -1171,12 +1171,12 @@ nav li div li a {
   content: "";
 }
 
-.quicklinks {
+.flipwrap {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 0;
 }
-.quicklinks a {
+.flipwrap a {
   display: block;
   transition: 0.6s;
   margin: 32px 42px;
@@ -1185,58 +1185,58 @@ nav li div li a {
   font-size: 0.84rem;
   font-family: FSThriveElliotWeb-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.quicklinks a label {
+.flipwrap a label {
   display: block;
   color: #555;
   margin-top: 12px;
 }
-.quicklinks a .ficon-medical:before {
+.flipwrap a .ficon-medical:before {
   color: #ea7600;
 }
-.quicklinks a .ficon-clock:before {
+.flipwrap a .ficon-clock:before {
   color: #a7ce39;
 }
-.quicklinks a .ficon-person:before {
+.flipwrap a .ficon-person:before {
   color: #2bafd7;
 }
-.quicklinks a .ficon-graph-circle:before {
+.flipwrap a .ficon-graph-circle:before {
   color: #676576;
 }
-.quicklinks a .ficon-spark:before {
+.flipwrap a .ficon-spark:before {
   color: #ffd216;
 }
-.quicklinks a:hover .ql[class^=ficon-]:before {
+.flipwrap a:hover .ql[class^=ficon-]:before {
   transition: 0.4s;
   color: #ccc;
 }
-.quicklinks a:hover label {
+.flipwrap a:hover label {
   transition: 0.4s;
   color: #ccc;
 }
 @media only screen and (max-width: 920px) {
-  .quicklinks a > div:before {
+  .flipwrap a > div:before {
     font-size: 1.6em;
   }
-  .quicklinks a label {
+  .flipwrap a label {
     font-size: 80%;
   }
 }
 @media only screen and (max-width: 740px) {
-  .quicklinks {
+  .flipwrap {
     padding: 12px 8px;
   }
-  .quicklinks a {
+  .flipwrap a {
     padding: 0 12px;
     margin: 0 4px;
   }
-  .quicklinks a > div:before {
+  .flipwrap a > div:before {
     font-size: 1.4em;
   }
-  .quicklinks a label {
+  .flipwrap a label {
     font-size: 70%;
   }
 }
-.quicklinks .quicklinkItem {
+.flipwrap .quicklinkItem {
   margin: 18px;
   position: relative;
 }

@@ -40,6 +40,7 @@ class Nav extends Component {
             <ul>
                 {navItems}
                 <MediaQuery maxWidth={740}>
+                    {/* // a cannot be inside a...!!! */}
                     <li className="inmobile"><Link to="/blank"><Profile /> <span>My Profile</span></Link></li>
                     <li className="inmobile"><Link to="/blank"><Chat /> <span>Chat</span></Link></li>
                 </MediaQuery>

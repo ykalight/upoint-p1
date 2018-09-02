@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import uuid from 'uuid';
 import CardNxItem from './CardNxItem';
 import Button from '../Common/Button';
-import QuicklinkItem from './QuicklinkItem';
+// import QuicklinkItem from './QuicklinkItem';
 import dataQuicklinks from '../../data/quicklinks';
 import scrollToComponent from 'react-scroll-to-component';
+import TestFlip from './TestFlip';
 
 import CardTimeoff from './CardTimeoff';
 
@@ -59,14 +60,14 @@ _showAll() {
 
   render() {
     
-    let quickItems;
-    if(this.state.quicklinksdata){
-        quickItems = this.state.quicklinksdata.slice(0, `${this.state.small_show}`).map(ql => {
-            return (
-                <QuicklinkItem key={uuid.v4()} ql={ql} showpin={this.state.showpin} />
-            )
-        });
-    }
+    // let quickItems;
+    // if(this.state.quicklinksdata){
+    //     quickItems = this.state.quicklinksdata.slice(0, `${this.state.small_show}`).map(ql => {
+    //         return (
+    //             <QuicklinkItem key={uuid.v4()} ql={ql} showpin={this.state.showpin} />
+    //         )
+    //     });
+    // }
 
     let cardItems;
     if(this.props.cardsdata){
@@ -82,7 +83,8 @@ _showAll() {
 
           <div className="ql-container">
             <div className="Card quicklinks">
-              {quickItems}
+              {/* {quickItems} */}
+              <TestFlip showpin={this.state.showpin} initialShow={this.state.small_show}/>
             </div>
           </div>
           

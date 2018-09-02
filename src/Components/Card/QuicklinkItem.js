@@ -7,7 +7,7 @@ class QuicklinkItem extends Component {
     constructor(){
         super();
         this.state = {
-          showpin: null
+            showpin: null
         }
       }
 
@@ -19,6 +19,8 @@ class QuicklinkItem extends Component {
 
     render() {
         return (
+            <div style={{ position: 'relative' }}>
+
             <FadeIn>
             <div className="quicklinkItem">
                 {this.state.showpin && (<Pin />)}
@@ -29,6 +31,7 @@ class QuicklinkItem extends Component {
                 </Link>
             </div>
             </FadeIn>
+            </div>
         );
     }
 }
