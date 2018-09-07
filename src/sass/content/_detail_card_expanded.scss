@@ -1,0 +1,60 @@
+.card-detail{
+    width:92%; margin:auto;
+}
+.card-detail-head{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    @include border-radius(4px);
+    padding:24px 12px;
+    background-color: $app-lightgray;
+    h4{
+        @include font(1.3, 'Regular');
+    }
+    .action{
+        display:flex;
+        align-items: center;
+        font-size: .9em; color:$app-blue;
+        span:before{font-size:16px; margin-right:8px; @include border-radius(100%); padding:6px; border:solid 1px $app-blue;}
+
+    }
+}
+.card-detail-row{
+    display:flex;
+    align-items: center;
+    border-bottom:solid 1px darken($card-panel-divider-color, 6%);
+    padding:28px 0;
+    h5{ 
+        width:18%;
+        font-size:1.05em; font-weight:bold;
+        div{font-size:70%; color: lighten(#000, 40%)}
+    }
+    > div{
+        display:flex; align-items: center;
+        min-height: 40px; padding:0 2.8em;
+        border-right: solid 1px $app-gray;
+        &:nth-last-child(-n+2){border:0}
+        &:last-child{flex-grow: 2; justify-content: flex-end; padding:0 18px 0 0}
+    }
+    .data{
+        font-size:1.2em; font-weight:bold; color:$app-darkgray;
+        &.smaller{font-size:94%}
+    }
+    label{
+        font-size:.72em;
+    }
+    p{
+        &.warn{color:$app-red; font-size:90%}
+    }
+
+    .highlight{color:$app-orange}
+    a{
+        font-size:90%;
+        &.button{margin:0; padding-left:1.8em; padding-right:1.8em}
+    }
+}
+.card-detail-last{
+    font-size:90%;
+    margin:18px 0 58px 0;
+    text-align: center;
+}

@@ -86,5 +86,35 @@
                 "destination": "/blank"
             }
         ]
+    },
+    {
+        "title": "Language",
+        "links": 
+        [
+            {
+                "label": "English",
+                "destination": "/blank"
+            },
+            {
+                "label": "Español",
+                "destination": "/blank"
+            },
+            {
+                "label": "French",
+                "destination": "/blank"
+            },
+            {
+                "label": "Polish",
+                "destination": "/blank"
+            },
+            {
+                "label": "Chinese",
+                "destination": "/blank"
+            },
+            {
+                "label": "German",
+                "destination": "/blank"
+            }
+        ]
     }
  ]

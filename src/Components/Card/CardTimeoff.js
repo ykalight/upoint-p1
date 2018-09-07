@@ -25,7 +25,7 @@ class CardTimeoff extends Component {
                             <div></div>
                         </div>
                         <h3>Time off
-                            <p>balance as of August 31, 2018</p>
+                            <p>as of August 31, 2018</p>
                         </h3>
                         <div className="visual">
                             <div className="datavis">

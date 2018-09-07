@@ -8,6 +8,7 @@ import scrollToComponent from 'react-scroll-to-component';
 import TestFlip from './TestFlip';
 
 import CardTimeoff from './CardTimeoff';
+import CardRetirement from './CardRetirement';
 
 class CardsNx extends Component {
   constructor(props){
@@ -69,14 +70,14 @@ _showAll() {
     //     });
     // }
 
-    let cardItems;
-    if(this.props.cardsdata){
-      cardItems = this.props.cardsdata.map(card => {
-        return (
-          <CardNxItem key={uuid.v4()} card={card} showpin={this.state.showpin} />
-        )
-      });
-    }
+    // let cardItems;
+    // if(this.props.cardsdata){
+    //   cardItems = this.props.cardsdata.map(card => {
+    //     return (
+    //       <CardNxItem key={uuid.v4()} card={card} showpin={this.state.showpin} />
+    //     )
+    //   });
+    // }
 
     return (
         <div className={`${this.state.editclass} container card-container`} ref={ re => { this.Cardtop = re }}>
@@ -88,7 +89,8 @@ _showAll() {
             </div>
           </div>
           
-          {cardItems}
+          {/* {cardItems} */}
+          <CardRetirement showpin={this.state.showpin} />
           <CardTimeoff showpin={this.state.showpin} />
           
           <div className="more">

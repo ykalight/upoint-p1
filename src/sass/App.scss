@@ -1,34 +1,20 @@
 // $use-mozilla-ellipsis-binding: true;
 
-@import "partials/font";
-@import "partials/variables";
-@import "partials/normalize";
-@import "partials/mixins";
+@import "shared/font";
+@import "shared/icons";
+@import "shared/variables";
+@import "shared/normalize";
+@import "shared/mixins";
 
-@import "partials/theme";
-@import "partials/base";
+@import "theme";
+@import "base";
 
-@import "partials/header";
-@import "partials/nav";
-@import "partials/banner";
-@import "partials/cards";
-@import "partials/icons";
-@import "partials/quicklinks";
-@import "partials/button";
-@import "partials/related";
-@import "partials/relatedAction";
-@import "partials/drawer";
-@import "partials/dynviews";
-@import "partials/subnav";
-@import "partials/popoversoft";
-@import "partials/profile";
-@import "partials/datastyles";
-@import "partials/footer";
-@import "partials/misc";
+@import "components/all";
 
-// TEMP ----! for prototype demo only!  ----!
-// Remove once real content in linked.
-@import "partials/tempContent";
+
+// TEMP ----
+@import "content/detail_card_expanded";
+@import "content/tempContent";
 
 
 

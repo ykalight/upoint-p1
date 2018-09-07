@@ -61,6 +61,118 @@
   font-weight: normal;
   font-style: normal;
 }
+*[class^=ficon-]:before {
+  font-size: 36px;
+}
+
+.ficon-arrow-down:before {
+  content: "";
+}
+
+.ficon-arrow-left:before {
+  content: "";
+}
+
+.ficon-arrow-right:before {
+  content: "";
+}
+
+.ficon-arrow-up:before {
+  content: "";
+}
+
+.ficon-bell:before {
+  content: "";
+}
+
+.ficon-card:before {
+  content: "";
+}
+
+.ficon-clock:before {
+  content: "";
+}
+
+.ficon-document:before {
+  content: "";
+}
+
+.ficon-eyeglass:before {
+  content: "";
+}
+
+.ficon-graph-bar-outline:before {
+  content: "";
+}
+
+.ficon-graph-bar:before {
+  content: "";
+}
+
+.ficon-graph-circle:before {
+  content: "";
+}
+
+.ficon-graph-pie:before {
+  content: "";
+}
+
+.ficon-heart:before {
+  content: "";
+}
+
+.ficon-medical:before {
+  content: "";
+}
+
+.ficon-pencil:before {
+  content: "";
+}
+
+.ficon-people-outline:before {
+  content: "";
+}
+
+.ficon-people:before {
+  content: "";
+}
+
+.ficon-person:before {
+  content: "";
+}
+
+.ficon-piggy-outline:before {
+  content: "";
+}
+
+.ficon-piggy:before {
+  content: "";
+}
+
+.ficon-pin:before {
+  content: "";
+}
+
+.ficon-spark:before {
+  content: "";
+}
+
+.ficon-spyglass:before {
+  content: "";
+}
+
+.ficon-talk:before {
+  content: "";
+}
+
+.ficon-threedot:before {
+  content: "";
+}
+
+.ficon-toothbrush:before {
+  content: "";
+}
+
 html {
   font-size: 62.5%;
 }
@@ -847,10 +959,6 @@ nav li div li a {
   color: #fff;
   background-color: #2bafd7;
 }
-.App-banner .button:hover {
-  background-color: #67c6e2;
-  color: #fff;
-}
 .App-banner img {
   height: 460px;
 }
@@ -998,18 +1106,6 @@ nav li div li a {
   overflow: hidden;
   padding: 18px;
 }
-.Card .panel p {
-  font-size: 2em;
-}
-.Card .panel h5 {
-  font-size: 8px;
-  font-size: 0.8rem;
-  font-family: FSThriveElliotWeb-Bold, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #6e6e6e;
-  padding: 12px 0 6px 0;
-  text-transform: uppercase;
-  border-bottom: solid 1px #ccc;
-}
 @media only screen and (max-width: 920px) {
   .Card .cardTop {
     padding: 18px 8px;
@@ -1075,118 +1171,6 @@ nav li div li a {
   }
 }
 
-*[class^=ficon-]:before {
-  font-size: 36px;
-}
-
-.ficon-arrow-down:before {
-  content: "";
-}
-
-.ficon-arrow-left:before {
-  content: "";
-}
-
-.ficon-arrow-right:before {
-  content: "";
-}
-
-.ficon-arrow-up:before {
-  content: "";
-}
-
-.ficon-bell:before {
-  content: "";
-}
-
-.ficon-card:before {
-  content: "";
-}
-
-.ficon-clock:before {
-  content: "";
-}
-
-.ficon-document:before {
-  content: "";
-}
-
-.ficon-eyeglass:before {
-  content: "";
-}
-
-.ficon-graph-bar-outline:before {
-  content: "";
-}
-
-.ficon-graph-bar:before {
-  content: "";
-}
-
-.ficon-graph-circle:before {
-  content: "";
-}
-
-.ficon-graph-pie:before {
-  content: "";
-}
-
-.ficon-heart:before {
-  content: "";
-}
-
-.ficon-medical:before {
-  content: "";
-}
-
-.ficon-pencil:before {
-  content: "";
-}
-
-.ficon-people-outline:before {
-  content: "";
-}
-
-.ficon-people:before {
-  content: "";
-}
-
-.ficon-person:before {
-  content: "";
-}
-
-.ficon-piggy-outline:before {
-  content: "";
-}
-
-.ficon-piggy:before {
-  content: "";
-}
-
-.ficon-pin:before {
-  content: "";
-}
-
-.ficon-spark:before {
-  content: "";
-}
-
-.ficon-spyglass:before {
-  content: "";
-}
-
-.ficon-talk:before {
-  content: "";
-}
-
-.ficon-threedot:before {
-  content: "";
-}
-
-.ficon-toothbrush:before {
-  content: "";
-}
-
 .flipwrap {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -1223,11 +1207,10 @@ nav li div li a {
 }
 .flipwrap a:hover .ql[class^=ficon-]:before {
   transition: 0.4s;
-  color: #ccc;
 }
 .flipwrap a:hover label {
   transition: 0.4s;
-  color: #ccc;
+  color: #2bafd7;
 }
 @media only screen and (max-width: 920px) {
   .flipwrap a > div:before {
@@ -1271,7 +1254,7 @@ nav li div li a {
   padding: 10px 3em;
 }
 .button:hover {
-  color: #2bafd7;
+  color: #fff;
   background-color: #1a718c;
 }
 .button.bt-outline {
@@ -1798,7 +1781,7 @@ footer > div {
   display: grid;
   grid-gap: 0;
   justify-content: space-between;
-  grid-template-areas: "f-directory f-directory f-directory f-directory f-social" "f-fhr f-fhr f-fhr f-fhr f-fhr" "f-logo f-logo f-logo f-logo f-switch" "f-copyright f-copyright f-copyright f-copyright f-copyright";
+  grid-template-areas: "f-directory f-directory f-directory f-directory f-directory" "f-fhr f-fhr f-fhr f-fhr f-fhr" "f-logo f-logo f-logo f-logo f-social" "f-copyright f-copyright f-copyright f-copyright f-copyright" "f-switch f-switch f-switch f-switch f-switch";
 }
 footer > div .footer-directory {
   grid-area: f-directory;
@@ -1845,10 +1828,11 @@ footer > div .flogo img {
 }
 footer > div .social {
   grid-area: f-social;
-  justify-self: start;
+  justify-self: end;
 }
 footer > div .tempSwitch {
   grid-area: f-switch;
+  text-align: center;
   margin: 8px 0;
 }
 footer > div .tempSwitch a {
@@ -2048,6 +2032,109 @@ footer > div .fhr {
   color: #fff;
 }
 
+.card-detail {
+  width: 92%;
+  margin: auto;
+}
+
+.card-detail-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* usage @import border-radius(12px) */
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  padding: 24px 12px;
+  background-color: #ededed;
+}
+.card-detail-head h4 {
+  font-size: 13px;
+  font-size: 1.3rem;
+  font-family: FSThriveElliotWeb-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.card-detail-head .action {
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+  color: #2bafd7;
+}
+.card-detail-head .action span:before {
+  font-size: 16px;
+  margin-right: 8px;
+  /* usage @import border-radius(12px) */
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  padding: 6px;
+  border: solid 1px #2bafd7;
+}
+
+.card-detail-row {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #bdbdbd;
+  padding: 28px 0;
+}
+.card-detail-row h5 {
+  width: 18%;
+  font-size: 1.05em;
+  font-weight: bold;
+}
+.card-detail-row h5 div {
+  font-size: 70%;
+  color: #666666;
+}
+.card-detail-row > div {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 2.8em;
+  border-right: solid 1px #ccc;
+}
+.card-detail-row > div:nth-last-child(-n+2) {
+  border: 0;
+}
+.card-detail-row > div:last-child {
+  flex-grow: 2;
+  justify-content: flex-end;
+  padding: 0 18px 0 0;
+}
+.card-detail-row .data {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #555555;
+}
+.card-detail-row .data.smaller {
+  font-size: 94%;
+}
+.card-detail-row label {
+  font-size: 0.72em;
+}
+.card-detail-row p.warn {
+  color: #c00;
+  font-size: 90%;
+}
+.card-detail-row .highlight {
+  color: #ea7600;
+}
+.card-detail-row a {
+  font-size: 90%;
+}
+.card-detail-row a.button {
+  margin: 0;
+  padding-left: 1.8em;
+  padding-right: 1.8em;
+}
+
+.card-detail-last {
+  font-size: 90%;
+  margin: 18px 0 58px 0;
+  text-align: center;
+}
+
 .visual > div {
   width: 100%;
   height: 80px;
@@ -2055,6 +2142,10 @@ footer > div .fhr {
   background-repeat: no-repeat;
   background-position: 0 50%;
   background-size: contain;
+}
+.visual > div#tempGraph_00 {
+  background-image: url("../img/tempGraph_00n.svg");
+  height: 66px;
 }
 .visual > div#tempGraph_01 {
   background-image: url("../img/tempGraph_01.svg");
@@ -2094,11 +2185,15 @@ footer > div .fhr {
 .tempGraph {
   width: 100%;
   height: 340px;
-  margin: 28px 0;
+  margin: 0 0 48px 0;
   background-color: transparent;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: contain;
+}
+.tempGraph#tempGraph_00dt {
+  background-image: url("../img/tempGraph_00.svg");
+  height: 760px;
 }
 .tempGraph#tempGraph_01dt {
   background-image: url("../img/tempGraph_01dt.svg");

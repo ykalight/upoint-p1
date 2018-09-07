@@ -1,0 +1,34 @@
+
+.App-banner{
+    background-color: #fff;
+    
+    .button{
+        font-size: $banner-button-text-size;
+        color: $banner-button-text-color;
+        background-color: $banner-button-bg-color;
+    }
+
+    img{height: 460px}
+    h1{font-size: 3em; line-height:1em}
+    p{font-size: 1.3em; margin:8px 0}
+    .banner-content{top: 100px; width: 50%; min-width: 420px; padding: 18px 58px}
+
+    @media only screen and (max-width: $large) {
+        h1{font-size: 2.6em}
+        p{font-size: 1.1em; margin:6px 0}
+    }
+    @media only screen and (max-width: $medium) {
+        img{height: 380px}
+        h1{font-size: 2.2em}
+        p{font-size: .9em}
+        .banner-content{top: 70px; width: 60%}
+        .button{font-size: 1em}
+    }
+    @media only screen and (max-width: $small) {
+        img{height: 320px}
+        h1{font-size: 1.8em}
+        h1, p{width:64%}
+        .banner-content{transition: 0.4s; top: 0; width:100%; height:280px; min-width: auto; padding: 82px 18px 28px 18px}
+        .button{font-size: .94em}
+    }
+}
