@@ -3,11 +3,10 @@ import {MdClose} from 'react-icons/lib/md';
 import ReactTimeout from 'react-timeout'
 
 let style = {
+    display:'block',
     textAlign:'center',
     zIndex: '999999',
-    position: 'absolute',
-    top: '0',
-    left: '0',
+    position: 'static',
     width: '100%'
 }
 

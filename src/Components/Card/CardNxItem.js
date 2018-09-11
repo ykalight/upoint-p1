@@ -9,7 +9,7 @@ class CardNxItem extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-            active: 'Card'
+            active: 'card'
         };
     }
 
@@ -19,17 +19,17 @@ class CardNxItem extends Component {
             {this.props.showpin && (<Pin classname="cardpin" />)}
             <a href={this.props.card.nxlink}>
                 <div className={this.state.active} > 
-                    <div className="cardTop nonexpand">
-                        <div className="icon">
+                    <div className="card__top card__top--nonexpand">
+                        <div className="card_top-icon">
                             <div className={this.props.card.icon !== '' ?  this.props.card.icon : ''}></div>
                         </div>
                         <h3>{this.props.card.title}
                             <p>{this.props.card.text}</p>
                         </h3>
-                        <div className="visual">
+                        <div className="card__top-visual">
                             <div id={this.props.card.visual !== '' ?  this.props.card.visual : ''}></div>
                         </div>
-                        <div className="arrow">
+                        <div className="card__top-arrow">
                             <span>{arrowDirection}</span>
                         </div>
                     </div>

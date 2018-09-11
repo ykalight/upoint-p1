@@ -18,8 +18,7 @@ import HeaderBar from './Components/Header/HeaderBar';
 import Banner from './Components/Header/Banner';
 import Footer from './Components/Footer/Footer';
 import IvaTrigger from './Components/Utility/IvaTrigger';
-import SystemMessage from './Components/Utility/SystemMessage';
-
+// import SystemMessage from './Components/Utility/SystemMessage';
 
 
 let homeContentStyle = {position: 'absolute', margin: 'auto', width: '100%', transform: 'translate(0%, -3.4%)'}
@@ -38,7 +37,7 @@ class App extends Component {
       toolboxedit_show: false,
       showMsg: true
     }
-    this.dismissMsg = this.dismissMsg.bind(this);
+    //this.dismissMsg = this.dismissMsg.bind(this);
   }
 
 
@@ -60,10 +59,10 @@ class App extends Component {
     Modal.setAppElement(this.el);
   }
 
-  dismissMsg() {
-    console.log("ddd");
-    this.setState({ showMsg: !this.state.showMsg})
-  }
+  // dismissMsg() {
+  //   this.setState({ showMsg: !this.state.showMsg})
+  // }
+
 
   render() {
     return (
@@ -88,7 +87,7 @@ class App extends Component {
 
           <Route exact strict path='/x' render={()=> {return(
             <main>
-              {this.state.showMsg && (<SystemMessage onClick={this.dismissMsg} />)}
+              {/* {this.state.showMsg && (<SystemMessage onClick={this.dismissMsg} />)} */}
               <Banner />
               <div className="content" style={homeContentStyle}>
                 <CardsNx cardsdata={this.state.cardsdata} />                             

@@ -1,17 +1,20 @@
 .button{
+    display:inline-block; 
+    margin:22px 0; 
+    padding:8px 1.8em;
     font-size: $button-text-size;
     color: $button-text-color;
     background-color: $button-bg-color;
-    &:hover{color: $button-text-hover-color; background-color: darken($button-bg-color, 18%)}
     @include border-radius( $button-border-radius );
-    display:inline-block; margin:22px 0; padding:10px 3em;
+    &:hover{
+        color: $button-text-hover-color; background-color: darken($button-bg-color, 18%)
+    }
 
-    &.bt-outline{
+    &--outline{
         color: $outline-button-text-color;
         background-color: $outline-button-bg-color;
         border: solid 1px $outline-button-outline-color;
-        padding:8px 2em;
-        margin:42px 0;
+        
         &:hover{
             background-color: darken($outline-button-bg-color,18%);
             border-color: darken($outline-button-outline-color, 18%);
@@ -24,12 +27,7 @@
     }
 
     @media only screen and (max-width: $small) {
-        font-size:.94em;
-        padding:8px 2.6em;
-        &.bt-outline{
-            font-size:.9em;
-            padding:4px 2em;
-            margin:18px 0;
-        }
+        font-size:.9em;
+        padding:6px 2.4em;
     }
 }

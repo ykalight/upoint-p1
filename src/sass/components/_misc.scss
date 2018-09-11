@@ -29,13 +29,21 @@
 
 // ========================================= SYSTEM MESSAGE ==============================================
 
+@-webkit-keyframes sysmAppear {0% {margin-top:-120px}} /* Safari 4.0 - 8.0 */
+@keyframes sysmAppear {0% {margin-top:-120px}} /* Standard syntax */
+
 @-webkit-keyframes dismiss {0% {top:0px}} /* Safari 4.0 - 8.0 */
 @keyframes dismiss {0% {top:0px}} /* Standard syntax */
 
 .system-message{
+    -webkit-animation-name: sysmAppear; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /*Safari 4.0 - 8.0 */
+    animation-name: sysmAppear;
+    animation-duration: .5s;
     background-color: $system-msg-bg-color;
     color: $system-msg-text-color;
     font-size: $system-msg-text-size;
+    margin-top:0px; 
 
     &.dismiss{
         -webkit-animation-name: dismiss; /* Safari 4.0 - 8.0 */
@@ -43,7 +51,7 @@
         animation-name: dismiss;
         animation-duration: 1s;
         transition: 1s;
-        margin-top:-300px;  
+        margin-top:-120px;  
     }
     
     .sysmsg-close{

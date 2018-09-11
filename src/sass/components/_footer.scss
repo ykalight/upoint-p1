@@ -42,6 +42,18 @@ footer{
         .social{
             grid-area: f-social;
             justify-self:end;
+            label{display:block; text-align:right}
+            a:last-child i{margin:0}
+            i{
+                transition: 0.4s;
+                color:#fff;
+                opacity:.6;
+                font-size: 1.4em;
+                margin: 8px;
+                &:hover{
+                    opacity:1;
+                }
+            }
         }
 
         .tempSwitch{
@@ -116,7 +128,7 @@ footer{
             .social{
                 justify-self:center;
                 margin:48px 0; 
-                text-align: center
+                label{text-align: center}
             }
 
             .copyright{

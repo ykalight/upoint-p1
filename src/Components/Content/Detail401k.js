@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import {MdKeyboardArrowRight, MdErrorOutline, MdError} from 'react-icons/lib/md';
+import {MdKeyboardArrowRight, MdError} from 'react-icons/lib/md';
 
 let dataStyle = {
     flexDirection:'column',

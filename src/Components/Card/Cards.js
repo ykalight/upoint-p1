@@ -21,7 +21,7 @@ class Cards extends Component {
           {cardItems}
           
           <div className="more">
-            <Button addclass="button bt-outline" destination="#" label="More..." />
+            <Button addclass="button button--outline" destination="#" label="More..." />
           </div>
         </div>
     );

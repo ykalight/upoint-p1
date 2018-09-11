@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import uuid from 'uuid';
-import CardNxItem from './CardNxItem';
 import Button from '../Common/Button';
-// import QuicklinkItem from './QuicklinkItem';
 import dataQuicklinks from '../../data/quicklinks';
-import scrollToComponent from 'react-scroll-to-component';
 import TestFlip from './TestFlip';
 
 import CardTimeoff from './CardTimeoff';
 import CardRetirement from './CardRetirement';
+import {MdKeyboardArrowUp, MdKeyboardArrowDown} from 'react-icons/lib/md';
+
+let arrowDirection = <MdKeyboardArrowDown />
 
 class CardsNx extends Component {
   constructor(props){
@@ -18,12 +17,16 @@ class CardsNx extends Component {
       small_show: 5,
       med_show: 4,
       showall: false,
+      showallsmall: false,
       quicklinksdata: [],
       btLabel: "More...",
-      showpin: false
+      showpin: false,
+      showpinsmall: false
     }
     this._showAll = this._showAll.bind(this);
     this._showDefault = this._showDefault.bind(this);
+    this._showQuickAll = this._showQuickAll.bind(this);
+    this._showQuickDefault = this._showQuickDefault.bind(this);
   }
 
   getData(){
@@ -32,60 +35,50 @@ class CardsNx extends Component {
     })
 }
 
-componentWillMount(){
-    this.getData();
-}
-
-_showAll() {
-    let cnt = this.state.quicklinksdata.length;
-      this.setState(
-          { 
-            small_show: cnt, showall: true, editclass: "active", btLabel: "Less...", showpin: true
-          }
-      );
-      this.scrollTo()
+  componentWillMount(){
+      this.getData();
+      this.state.showallsmall ? arrowDirection = <MdKeyboardArrowUp /> : arrowDirection = <MdKeyboardArrowDown/>
   }
 
-  _showDefault() {
+  _showAll(e) {
+        this.setState(
+            {showall: true, editclass: "active", btLabel: "Less...", showpin: true}
+        );
+        e.preventDefault();
+    }
+
+  _showDefault(e) {
       this.setState(
-          { 
-            small_show: 5, showall: false,  editclass: "", btLabel: "More...", showpin: false
-          }
+          {showall: false,  editclass: "", btLabel: "More...", showpin: false}
       );
-      this.scrollTo()
+      e.preventDefault();
   }
 
-  scrollTo() {
-    scrollToComponent(this.Cardtop, { offset: -120, align: 'top', duration: 500})
+  _showQuickAll() {
+      let cnt = this.state.quicklinksdata.length;
+        this.setState(
+            {small_show: cnt, showallsmall: true, showpinsmall: true}
+        );
+        arrowDirection = <MdKeyboardArrowUp /> 
+    }
+
+  _showQuickDefault() {
+      this.setState(
+          { small_show: 5, showallsmall: false,  showpinsmall: false}
+      );
+      arrowDirection = <MdKeyboardArrowDown /> 
   }
 
   render() {
-    
-    // let quickItems;
-    // if(this.state.quicklinksdata){
-    //     quickItems = this.state.quicklinksdata.slice(0, `${this.state.small_show}`).map(ql => {
-    //         return (
-    //             <QuicklinkItem key={uuid.v4()} ql={ql} showpin={this.state.showpin} />
-    //         )
-    //     });
-    // }
-
-    // let cardItems;
-    // if(this.props.cardsdata){
-    //   cardItems = this.props.cardsdata.map(card => {
-    //     return (
-    //       <CardNxItem key={uuid.v4()} card={card} showpin={this.state.showpin} />
-    //     )
-    //   });
-    // }
 
     return (
         <div className={`${this.state.editclass} container card-container`} ref={ re => { this.Cardtop = re }}>
 
           <div className="ql-container">
-            <div className="Card quicklinks">
+            <div className="card quicklinks">
               {/* {quickItems} */}
-              <TestFlip showpin={this.state.showpin} initialShow={this.state.small_show}/>
+              <TestFlip showpin={this.state.showpinsmall} initialShow={this.state.small_show}/>
+              <div className="quicklinks__trigger" onClick={this.state.showallsmall ? this._showQuickDefault : this._showQuickAll}>{arrowDirection}</div>
             </div>
           </div>
           
@@ -94,7 +87,7 @@ _showAll() {
           <CardTimeoff showpin={this.state.showpin} />
           
           <div className="more">
-            <Button addclass="button bt-outline" destination="#" isShowAll={this.state.showall} label={this.state.btLabel} onClick={this.state.showall ? this._showDefault : this._showAll} />
+            <Button addclass="button button--outline" destination="#" isShowAll={this.state.showall} label={this.state.btLabel} onClick={this.state.showall ? this._showDefault : this._showAll} />
           </div>
 
         </div>

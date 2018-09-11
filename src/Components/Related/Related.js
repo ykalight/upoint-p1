@@ -73,7 +73,7 @@ class Related extends Component {
 
             <div className="more">
               <span onClick={this.state.showall ? this._showDefault : this._showAll}>
-                <Button addclass="button bt-outline" destination="#" onClick={this.preventDefault} label={this.state.btlabel} />
+                <Button addclass="button button--outline" destination="#" onClick={this.preventDefault} label={this.state.btlabel} />
               </span>
             </div>
 

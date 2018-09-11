@@ -17,7 +17,7 @@ class CardItem extends Component {
         this._toggleDiv = this._toggleDiv.bind(this);
         this.state = { 
             visible: 'panel',
-            active: 'Card',
+            active: 'card',
             detailpieces: this.props.card.expand
         };
     }
@@ -26,14 +26,14 @@ class CardItem extends Component {
         $(this.refs['toggle-div']).slideToggle();
         this.setState(
             { 
-                active: this.state.active === 'Card'? 'Card active' : 'Card'
+                active: this.state.active === 'card'? 'card card--active' : 'card'
             }
         );
-        this.state.active === 'Card' ? arrowDirection = <MdKeyboardArrowUp /> : arrowDirection = <MdKeyboardArrowDown/>
+        this.state.active === 'card' ? arrowDirection = <MdKeyboardArrowUp /> : arrowDirection = <MdKeyboardArrowDown/>
     }
 
     componentWillMount(){
-        this.state.active === 'Card active' ? arrowDirection = <MdKeyboardArrowUp /> : arrowDirection = <MdKeyboardArrowDown/>
+        this.state.active === 'card card--active' ? arrowDirection = <MdKeyboardArrowUp /> : arrowDirection = <MdKeyboardArrowDown/>
     }
 
     render() {
@@ -50,20 +50,20 @@ class CardItem extends Component {
         return (
         <FadeIn>
         <div className={this.state.active} > 
-            <div className="cardTop" onClick={this._toggleDiv} style={cardtopStyle}>
-                <div className="icon">
+            <div className="card__top" onClick={this._toggleDiv} style={cardtopStyle}>
+                <div className="card__top-icon">
                     <div className={this.props.card.icon !== '' ?  this.props.card.icon : ''}></div>
                 </div>
-                <h3>{this.props.card.title}</h3>
-                <div className="visual">
+                <h3 className="card__top-title">{this.props.card.title}</h3>
+                <div className="card__top-visual">
                     <div id={this.props.card.visual !== '' ?  this.props.card.visual : ''}></div>
                 </div>
-                <div className="arrow">
+                <div className="card__top-arrow">
                     {arrowDirection}
                 </div>
             </div>
             
-            <div className="panel" ref="toggle-div">
+            <div className="card__panel" ref="toggle-div">
                 <DetailRenderer 
                     title={this.state.detailpieces.title}
                     visual={this.state.detailpieces.visual}

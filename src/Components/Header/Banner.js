@@ -11,15 +11,15 @@ class Banner extends Component {
   render() {
     
     return (
-        <div className="App-banner" style={{overflow: 'hidden'}}>
-            <div className="container">
-              <div className="banner-content" style={contentStyle}>
-                <h1>{data[0].headline1}</h1>
-                <p>{data[0].headline2}</p>
-                <Button addclass="button" destination={data[0].destination} label={data[0].button} />
+        <div className="banner" style={{overflow: 'hidden'}}>
+            <div className="container banner__container">
+              <div className="banner__content" style={contentStyle}>
+                <h1 className="banner__h1">{data[0].headline1}</h1>
+                <p className="banner__p">{data[0].headline2}</p>
+                <Button addclass="button banner__button" destination={data[0].destination} label={data[0].button} />
               </div>
             </div>
-            <img src={bannerimg} alt="banner" style={imgStyle} />
+            <img className="banner__img" src={bannerimg} alt="banner" style={imgStyle} />
         </div>
     );
   }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Route from 'react-router-dom/Route';
 import Logo from './Logo';
 import Nav from './Nav';
 import Message from './Message';
@@ -6,6 +7,7 @@ import Profile from './Profile';
 import Chat from './Chat';
 import Search from './Search';
 import MobileNav from './MobileNav';
+import SystemMessage from '../Utility/SystemMessage';
 
 let activeCardStyle;
 
@@ -19,16 +21,19 @@ class HeaderBar extends Component {
             width: 0,
             navshowclass: "",
             showheadclass: "",
-            xclass: "hide"
+            xclass: "hide",
+            showMsg: true
         }
         this.handleScroll = this.handleScroll.bind(this);
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
         this._toggleDiv = this._toggleDiv.bind(this);
+        this.dismissMsg = this.dismissMsg.bind(this);
     }
 
     componentWillMount() {
         this.updateWindowDimensions();
         activeCardStyle = {position: this.state.scrolling ? 'fixed' : 'fixed', top: 0, width: '100vw', zIndex: 1}
+        
     }
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
@@ -65,11 +70,23 @@ class HeaderBar extends Component {
         );
     }
 
+    dismissMsg() {
+        this.setState({ showMsg: !this.state.showMsg})
+    }
+
     render() {
         return (
 
             // Need to convert to FLEX box, or provide fallback for GRID.
             <header className={this.state.active} style={activeCardStyle}>
+
+                <Route exact strict path='/x' render={()=> {return(
+                    <span>
+                        {this.state.showMsg && (<SystemMessage onClick={this.dismissMsg} />)}
+                    </span>
+                )}} />
+
+                
                 <div>
                     <MobileNav />
                     <Logo />

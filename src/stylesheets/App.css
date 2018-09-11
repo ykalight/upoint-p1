@@ -555,6 +555,831 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: "Socialicious";
+  src: url("../font/EOT/socialicious.eot");
+  src: local("☺"), url("../font/EOT/socialicious.eot?#iefix") format("embedded-opentype"), url("../font/Web_TTF/socialicious.ttf") format("truetype"), url("../font/SVG/socialicious.svg#socialicious") format("svg"), url("../font/WOFF/socialicious.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+[data-icon]:before {
+  font-family: "Socialicious" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^=icon-]:before,
+[class*=" icon-"]:before {
+  font-family: "Socialicious" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bebo:before {
+  content: "a";
+}
+
+.icon-bebo-sign:before {
+  content: "b";
+}
+
+.icon-behance:before {
+  content: "c";
+}
+
+.icon-behance-sign:before {
+  content: "d";
+}
+
+.icon-bread:before {
+  content: "e";
+}
+
+.icon-bread-sign:before {
+  content: "f";
+}
+
+.icon-digg:before {
+  content: "g";
+}
+
+.icon-digg-sign:before {
+  content: "h";
+}
+
+.icon-disqus:before {
+  content: "i";
+}
+
+.icon-disqus-sign:before {
+  content: "j";
+}
+
+.icon-dribbble:before {
+  content: "k";
+}
+
+.icon-dribbble-sign:before {
+  content: "l";
+}
+
+.icon-facebook:before {
+  content: "m";
+}
+
+.icon-facebook-sign:before {
+  content: "n";
+}
+
+.icon-flickr:before {
+  content: "o";
+}
+
+.icon-flickr-sign:before {
+  content: "p";
+}
+
+.icon-github:before {
+  content: "s";
+}
+
+.icon-github-sign:before {
+  content: "t";
+}
+
+.icon-goodreads:before {
+  content: "u";
+}
+
+.icon-goodreads-sign:before {
+  content: "v";
+}
+
+.icon-googleplus:before {
+  content: "w";
+}
+
+.icon-googleplus-sign:before {
+  content: "x";
+}
+
+.icon-instagram:before {
+  content: "y";
+}
+
+.icon-instagram-sign:before {
+  content: "z";
+}
+
+.icon-klout:before {
+  content: "A";
+}
+
+.icon-klout-sign:before {
+  content: "B";
+}
+
+.icon-lastfm:before {
+  content: "C";
+}
+
+.icon-lastfm-sign:before {
+  content: "D";
+}
+
+.icon-linkedin:before {
+  content: "E";
+}
+
+.icon-linkedin-sign:before {
+  content: "F";
+}
+
+.icon-pinterest:before {
+  content: "G";
+}
+
+.icon-pinterest-sign:before {
+  content: "H";
+}
+
+.icon-pocket:before {
+  content: "I";
+}
+
+.icon-pocket-sign:before {
+  content: "J";
+}
+
+.icon-quora:before {
+  content: "K";
+}
+
+.icon-quora-sign:before {
+  content: "L";
+}
+
+.icon-reddit:before {
+  content: "M";
+}
+
+.icon-reddit-sign:before {
+  content: "N";
+}
+
+.icon-soundcloud:before {
+  content: "O";
+}
+
+.icon-soundcloud-sign:before {
+  content: "P";
+}
+
+.icon-spotify:before {
+  content: "Q";
+}
+
+.icon-spotify-sign:before {
+  content: "R";
+}
+
+.icon-stumbleupon:before {
+  content: "S";
+}
+
+.icon-stumbleupon-sign:before {
+  content: "T";
+}
+
+.icon-techendo:before {
+  content: "U";
+}
+
+.icon-techendo-sign:before {
+  content: "V";
+}
+
+.icon-tumblr:before {
+  content: "W";
+}
+
+.icon-tumblr-sign:before {
+  content: "X";
+}
+
+.icon-twitter:before {
+  content: "Y";
+}
+
+.icon-twitter-sign:before {
+  content: "Z";
+}
+
+.icon-vevo:before {
+  content: "0";
+}
+
+.icon-vevo-sign:before {
+  content: "1";
+}
+
+.icon-vimeo:before {
+  content: "2";
+}
+
+.icon-vimeo-sign:before {
+  content: "3";
+}
+
+.icon-wordpress:before {
+  content: "4";
+}
+
+.icon-wordpress-sign:before {
+  content: "5";
+}
+
+.icon-yelp:before {
+  content: "8";
+}
+
+.icon-yelp-sign:before {
+  content: "9";
+}
+
+.icon-youtube:before {
+  content: "!";
+}
+
+.icon-youtube-sign:before {
+  content: '"';
+}
+
+.icon-aboutme:before {
+  content: "#";
+}
+
+.icon-aboutme-sign:before {
+  content: "$";
+}
+
+.icon-angellist:before {
+  content: "%";
+}
+
+.icon-angellist-sign:before {
+  content: "&";
+}
+
+.icon-dropbox:before {
+  content: "'";
+}
+
+.icon-dropbox-sign:before {
+  content: "(";
+}
+
+.icon-meetup:before {
+  content: ")";
+}
+
+.icon-meetup-sign:before {
+  content: "*";
+}
+
+.icon-medium:before {
+  content: "+";
+}
+
+.icon-medium-sign:before {
+  content: ",";
+}
+
+.icon-foursquare:before {
+  content: "q";
+}
+
+.icon-foursquare-sign:before {
+  content: "r";
+}
+
+.icon-yahoo:before {
+  content: "6";
+}
+
+.icon-yahoo-sign:before {
+  content: "7";
+}
+
+/* more sprites.less reset */
+.icon-white,
+.nav-pills > .active > a > [class^=icon-],
+.nav-pills > .active > a > [class*=" icon-"],
+.nav-list > .active > a > [class^=icon-],
+.nav-list > .active > a > [class*=" icon-"],
+.navbar-inverse .nav > .active > a > [class^=icon-],
+.navbar-inverse .nav > .active > a > [class*=" icon-"],
+.dropdown-menu > li > a:hover > [class^=icon-],
+.dropdown-menu > li > a:hover > [class*=" icon-"],
+.dropdown-menu > .active > a > [class^=icon-],
+.dropdown-menu > .active > a > [class*=" icon-"],
+.dropdown-submenu:hover > a > [class^=icon-],
+.dropdown-submenu:hover > a > [class*=" icon-"] {
+  background-image: none;
+}
+
+[class^=icon-]:before,
+[class*=" icon-"]:before {
+  text-decoration: inherit;
+  display: inline-block;
+  speak: none;
+}
+
+/* makes sure icons active on rollover in links */
+a [class^=icon-],
+a [class*=" icon-"] {
+  display: inline-block;
+}
+
+/* makes the font 33% larger relative to the icon container */
+.icon-large:before {
+  vertical-align: -10%;
+  font-size: 1.3333333333em;
+}
+
+.btn [class^=icon-],
+.nav [class^=icon-],
+.btn [class*=" icon-"],
+.nav [class*=" icon-"] {
+  display: inline-block;
+  color: #fff;
+  margin-right: 2px;
+  margin-top: -2px;
+  /* keeps button heights with and without icons the same */
+}
+
+.btn [class^=icon-].icon-large,
+.nav [class^=icon-].icon-large,
+.btn [class*=" icon-"].icon-large,
+.nav [class*=" icon-"].icon-large {
+  line-height: 0.9em;
+}
+
+.btn [class^=icon-].icon-spin,
+.nav [class^=icon-].icon-spin,
+.btn [class*=" icon-"].icon-spin,
+.nav [class*=" icon-"].icon-spin {
+  display: inline-block;
+}
+
+.nav-tabs [class^=icon-],
+.nav-pills [class^=icon-],
+.nav-tabs [class*=" icon-"],
+.nav-pills [class*=" icon-"] {
+  /* keeps button heights with and without icons the same */
+}
+
+.nav-tabs [class^=icon-],
+.nav-pills [class^=icon-],
+.nav-tabs [class*=" icon-"],
+.nav-pills [class*=" icon-"],
+.nav-tabs [class^=icon-].icon-large,
+.nav-pills [class^=icon-].icon-large,
+.nav-tabs [class*=" icon-"].icon-large,
+.nav-pills [class*=" icon-"].icon-large {
+  line-height: 0.9em;
+}
+
+li [class^=icon-],
+.nav li [class^=icon-],
+li [class*=" icon-"],
+.nav li [class*=" icon-"] {
+  display: inline-block;
+  width: 1.25em;
+  text-align: center;
+}
+
+li [class^=icon-].icon-large,
+.nav li [class^=icon-].icon-large,
+li [class*=" icon-"].icon-large,
+.nav li [class*=" icon-"].icon-large {
+  /* increased font size for icon-large */
+  width: 1.5625em;
+}
+
+ul.icons {
+  list-style-type: none;
+  text-indent: -0.75em;
+}
+
+ul.icons li [class^=icon-],
+ul.icons li [class*=" icon-"] {
+  width: 0.75em;
+}
+
+.icon-muted {
+  color: #eeeeee;
+}
+
+.icon-border {
+  border: solid 1px #eeeeee;
+  padding: 0.2em 0.25em 0.15em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.icon-2x {
+  font-size: 2em;
+}
+
+.icon-2x.icon-border {
+  border-width: 2px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.icon-3x {
+  font-size: 3em;
+}
+
+.icon-3x.icon-border {
+  border-width: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.icon-4x {
+  font-size: 4em;
+}
+
+.icon-4x.icon-border {
+  border-width: 4px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+[class^=icon-].pull-left,
+[class*=" icon-"].pull-left {
+  margin-right: 0.3em;
+}
+
+[class^=icon-].pull-right,
+[class*=" icon-"].pull-right {
+  margin-left: 0.3em;
+}
+
+.btn [class^=icon-].pull-left.icon-2x,
+.btn [class*=" icon-"].pull-left.icon-2x,
+.btn [class^=icon-].pull-right.icon-2x,
+.btn [class*=" icon-"].pull-right.icon-2x {
+  margin-top: 0.18em;
+}
+
+.btn [class^=icon-].icon-spin.icon-large,
+.btn [class*=" icon-"].icon-spin.icon-large {
+  line-height: 0.8em;
+}
+
+.btn.btn-small [class^=icon-].pull-left.icon-2x,
+.btn.btn-small [class*=" icon-"].pull-left.icon-2x,
+.btn.btn-small [class^=icon-].pull-right.icon-2x,
+.btn.btn-small [class*=" icon-"].pull-right.icon-2x {
+  margin-top: 0.25em;
+}
+
+.btn.btn-large [class^=icon-],
+.btn.btn-large [class*=" icon-"] {
+  margin-top: 0;
+}
+
+.btn.btn-large [class^=icon-].pull-left.icon-2x,
+.btn.btn-large [class*=" icon-"].pull-left.icon-2x,
+.btn.btn-large [class^=icon-].pull-right.icon-2x,
+.btn.btn-large [class*=" icon-"].pull-right.icon-2x {
+  margin-top: 0.05em;
+}
+
+.btn.btn-large [class^=icon-].pull-left.icon-2x,
+.btn.btn-large [class*=" icon-"].pull-left.icon-2x {
+  margin-right: 0.2em;
+}
+
+.btn.btn-large [class^=icon-].pull-right.icon-2x,
+.btn.btn-large [class*=" icon-"].pull-right.icon-2x {
+  margin-left: 0.2em;
+}
+
+.btn-facebook {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #355089;
+  background-image: -moz-linear-gradient(top, #3b5998, #2d4373);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3b5998), to(#2d4373));
+  background-image: -webkit-linear-gradient(top, #3b5998, #2d4373);
+  background-image: -o-linear-gradient(top, #3b5998, #2d4373);
+  background-image: linear-gradient(to bottom, #3b5998, #2d4373);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF3B5998", endColorstr="#FF2D4373", GradientType=0);
+  border-color: #2d4373 #2d4373 #17233c;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #2d4373;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  border-color: #1e2e4f;
+}
+
+.btn-facebook:hover, .btn-facebook:focus, .btn-facebook:active, .btn-facebook.active, .btn-facebook.disabled, .btn-facebook[disabled] {
+  color: white;
+  background-color: #2d4373;
+  *background-color: #263961;
+}
+
+.btn-facebook:active, .btn-facebook.active {
+  background-color: #1e2e4f \9;
+}
+
+.btn-linkedin {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #426ba5;
+  background-image: -moz-linear-gradient(top, #4875b4, #395d90);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4875b4), to(#395d90));
+  background-image: -webkit-linear-gradient(top, #4875b4, #395d90);
+  background-image: -o-linear-gradient(top, #4875b4, #395d90);
+  background-image: linear-gradient(to bottom, #4875b4, #395d90);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF4875B4", endColorstr="#FF395D90", GradientType=0);
+  border-color: #395d90 #395d90 #243a59;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #395d90;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  border-color: #2b466b;
+}
+
+.btn-linkedin:hover, .btn-linkedin:focus, .btn-linkedin:active, .btn-linkedin.active, .btn-linkedin.disabled, .btn-linkedin[disabled] {
+  color: white;
+  background-color: #395d90;
+  *background-color: #32517d;
+}
+
+.btn-linkedin:active, .btn-linkedin.active {
+  background-color: #2b466b \9;
+}
+
+.btn-twitter {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #1ebff5;
+  background-image: -moz-linear-gradient(top, #33ccff, #00ace6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#33ccff), to(#00ace6));
+  background-image: -webkit-linear-gradient(top, #33ccff, #00ace6);
+  background-image: -o-linear-gradient(top, #33ccff, #00ace6);
+  background-image: linear-gradient(to bottom, #33ccff, #00ace6);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF33CCFF", endColorstr="#FF00ACE6", GradientType=0);
+  border-color: #00ace6 #00ace6 #007399;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #00ace6;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  border-color: #00a4db;
+}
+
+.btn-twitter:hover, .btn-twitter:focus, .btn-twitter:active, .btn-twitter.active, .btn-twitter.disabled, .btn-twitter[disabled] {
+  color: white;
+  background-color: #00ace6;
+  *background-color: #0099cc;
+}
+
+.btn-twitter:active, .btn-twitter.active {
+  background-color: #0086b3 \9;
+}
+
+.btn-github {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: black;
+  background-image: -moz-linear-gradient(top, black, black);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(black), to(black));
+  background-image: -webkit-linear-gradient(top, black, black);
+  background-image: -o-linear-gradient(top, black, black);
+  background-image: linear-gradient(to bottom, black, black);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF000000", endColorstr="#FF000000", GradientType=0);
+  border-color: black black black;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: black;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  border-color: black;
+}
+
+.btn-github:hover, .btn-github:focus, .btn-github:active, .btn-github.active, .btn-github.disabled, .btn-github[disabled] {
+  color: white;
+  background-color: black;
+  *background-color: black;
+}
+
+.btn-github:active, .btn-github.active {
+  background-color: black \9;
+}
+
+.btn-google {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #c83e2d;
+  background-image: -moz-linear-gradient(top, #dc4a38, #aa2d1e);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dc4a38), to(#aa2d1e));
+  background-image: -webkit-linear-gradient(top, #dc4a38, #aa2d1e);
+  background-image: -o-linear-gradient(top, #dc4a38, #aa2d1e);
+  background-image: linear-gradient(to bottom, #dc4a38, #aa2d1e);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFDC4A38", endColorstr="#FFAA2D1E", GradientType=0);
+  border-color: #aa2d1e #aa2d1e #691c12;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #aa2d1e;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  border-color: #a12b1c;
+}
+
+.btn-google:hover, .btn-google:focus, .btn-google:active, .btn-google.active, .btn-google.disabled, .btn-google[disabled] {
+  color: white;
+  background-color: #aa2d1e;
+  *background-color: #94271a;
+}
+
+.btn-google:active, .btn-google.active {
+  background-color: #7e2216 \9;
+}
+
+/* Social Identities */
+i.icon-aboutme-sign, i.icon-aboutme {
+  color: #00405d;
+}
+
+i.icon-angellist-sign, i.icon-angellist {
+  color: black;
+}
+
+i.icon-bebo, i.icon-bebo-sign {
+  color: #ee1010;
+}
+
+i.icon-behance-sign, i.icon-behance {
+  color: #005cff;
+}
+
+i.icon-bread-sign, i.icon-bread {
+  color: #00a4e4;
+}
+
+i.icon-digg-sign, i.icon-digg {
+  color: #065796;
+}
+
+i.icon-disqus-sign, i.icon-disqus {
+  color: #2e9fff;
+}
+
+i.icon-dropbox-sign, i.icon-dropbox {
+  color: #007ee5;
+}
+
+i.icon-dribbble-sign, i.icon-dribbble {
+  color: #ea4c89;
+}
+
+i.icon-facebook-sign, i.icon-facebook {
+  color: #3b5998;
+}
+
+i.icon-flickr-sign, i.icon-flickr {
+  color: #ed1e83;
+}
+
+i.icon-foursquare, i.icon-foursquare-sign {
+  color: #0cbadf;
+}
+
+i.icon-github-sign, i.icon-github {
+  color: black;
+}
+
+i.icon-goodreads-sign, i.icon-goodreads {
+  color: #5a471c;
+}
+
+i.icon-googleplus-sign, i.icon-googleplus {
+  color: #303030;
+}
+
+i.icon-instagram-sign, i.icon-instagram {
+  color: #3f729b;
+}
+
+i.icon-klout-sign, i.icon-klout {
+  color: #e24a25;
+}
+
+i.icon-lastfm-sign, i.icon-lastfm {
+  color: #a52f23;
+}
+
+i.icon-linkedin-sign, i.icon-linkedin {
+  color: #4875b4;
+}
+
+i.icon-medium-sign, i.icon-medium {
+  color: black;
+}
+
+i.icon-meetup-sign, i.icon-meetup {
+  color: #dd3333;
+}
+
+i.icon-pinterest-sign, i.icon-pinterest {
+  color: #cb2027;
+}
+
+i.icon-pocket-sign, i.icon-pocket {
+  color: #ee3f53;
+}
+
+i.icon-quora-sign, i.icon-quora {
+  color: #a72822;
+}
+
+i.icon-reddit-sign, i.icon-reddit {
+  color: #638cb1;
+}
+
+i.icon-soundcloud-sign, i.icon-soundcloud {
+  color: #ef3b24;
+}
+
+i.icon-spotify-sign, i.icon-spotify {
+  color: #75c044;
+}
+
+i.icon-stumbleupon-sign, i.icon-stumbleupon {
+  color: #e84c24;
+}
+
+i.icon-techendo-sign, i.icon-techendo {
+  color: #32363c;
+}
+
+i.icon-tumblr-sign, i.icon-tumblr {
+  color: #45556b;
+}
+
+i.icon-twitter-sign, i.icon-twitter {
+  color: #33ccff;
+}
+
+i.icon-vevo, i.icon-vevo-sign {
+  color: #dc2726;
+}
+
+i.icon-vimeo, i.icon-vimeo-sign {
+  color: #1fb7ea;
+}
+
+i.icon-wordpress, i.icon-wordpress-sign {
+  color: #464342;
+}
+
+i.icon-yahoo-sign, i.icon-yahoo {
+  color: #400090;
+}
+
+i.icon-yelp-sign, i.icon-yelp {
+  color: #ca3c27;
+}
+
+i.icon-youtube-sign, i.icon-youtube {
+  color: #eb2629;
+}
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -655,15 +1480,56 @@ footer .container {
   font-family: "upoint-ficon";
 }
 
+.button {
+  display: inline-block;
+  margin: 22px 0;
+  padding: 8px 1.8em;
+  font-size: 1em;
+  color: #fff;
+  background-color: #2bafd7;
+  /* usage @import border-radius(12px) */
+  -webkit-border-radius: 24px;
+  border-radius: 24px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+}
+.button:hover {
+  color: #fff;
+  background-color: #1a718c;
+}
+.button--outline {
+  color: #2bafd7;
+  background-color: transparent;
+  border: solid 1px #2bafd7;
+}
+.button--outline:hover {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #1a718c;
+  color: #1a718c;
+}
+@media only screen and (max-width: 920px) {
+  .button {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .button {
+    font-size: 0.9em;
+    padding: 6px 2.4em;
+  }
+}
+
 header {
   transition: 0.2s;
   color: #fff;
   background-color: #051a34cc;
   text-align: center;
-  padding: 0 0 0 12px;
 }
 header.active {
   box-shadow: 0 -16px 18px 12px #000;
+}
+header .Head-logo {
+  padding: 0 0 0 12px;
 }
 header > div {
   display: grid;
@@ -951,69 +1817,71 @@ nav li div li a {
   background-color: #2f4258;
 }
 
-.App-banner {
+.banner {
   background-color: #fff;
 }
-.App-banner .button {
+.banner__button {
   font-size: 1.2em;
   color: #fff;
   background-color: #2bafd7;
+  padding: 12px 2.4em;
 }
-.App-banner img {
+.banner__img {
   height: 460px;
 }
-.App-banner h1 {
+.banner__h1 {
   font-size: 3em;
   line-height: 1em;
 }
-.App-banner p {
+.banner__p {
   font-size: 1.3em;
   margin: 8px 0;
 }
-.App-banner .banner-content {
+.banner__content {
   top: 100px;
   width: 50%;
   min-width: 420px;
   padding: 18px 58px;
 }
 @media only screen and (max-width: 1080px) {
-  .App-banner h1 {
+  .banner__h1 {
     font-size: 2.6em;
   }
-  .App-banner p {
+  .banner__p {
     font-size: 1.1em;
     margin: 6px 0;
   }
 }
 @media only screen and (max-width: 920px) {
-  .App-banner img {
+  .banner__img {
     height: 380px;
   }
-  .App-banner h1 {
+  .banner__h1 {
     font-size: 2.2em;
   }
-  .App-banner p {
+  .banner__p {
     font-size: 0.9em;
   }
-  .App-banner .banner-content {
+  .banner__content {
     top: 70px;
     width: 60%;
   }
-  .App-banner .button {
+  .banner__button {
     font-size: 1em;
+    padding: 8px 2em;
   }
 }
 @media only screen and (max-width: 740px) {
-  .App-banner img {
+  .banner__img {
     height: 320px;
   }
-  .App-banner h1 {
+  .banner__h1 {
     font-size: 1.8em;
   }
-  .App-banner h1, .App-banner p {
+  .banner__h1, .banner__p {
     width: 64%;
   }
-  .App-banner .banner-content {
+  .banner__content {
     transition: 0.4s;
     top: 0;
     width: 100%;
@@ -1021,12 +1889,13 @@ nav li div li a {
     min-width: auto;
     padding: 82px 18px 28px 18px;
   }
-  .App-banner .button {
+  .banner__button {
     font-size: 0.94em;
+    padding: 6px 1.4em;
   }
 }
 
-.Card {
+.card {
   transition: 0.4s;
   margin: 8px 0;
   background-color: #fff;
@@ -1037,7 +1906,46 @@ nav li div li a {
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
 }
-.Card .cardTop {
+.card--active .card__top:hover {
+  /* usage @import border-radius-custom(12px, 0, 10px, 0) */
+  -webkit-border-top-left-radius: 14px;
+  -webkit-border-top-right-radius: 14px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-clip: padding-box;
+}
+.card__panel {
+  display: none;
+  overflow: hidden;
+  padding: 18px;
+}
+@media only screen and (max-width: 740px) {
+  .card {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-color: #d1d2d4;
+    margin: 0;
+    /* usage @import border-radius(12px) */
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+  }
+  .card--active .card__top:hover {
+    /* usage @import border-radius(12px) */
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+  }
+}
+
+.card__top {
   display: grid;
   grid-template-columns: 30px 37% auto 80px;
   grid-gap: 18px;
@@ -1051,97 +1959,55 @@ nav li div li a {
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
 }
-.Card .cardTop h3 {
-  font-size: 1.4em;
-  color: #555555;
-  padding-right: 52px;
-}
-.Card .cardTop h3 p {
-  font-size: 68%;
-  color: #838383;
-}
-.Card .cardTop .alert {
-  width: 20px;
-  height: 40px;
-  background: transparent url("../img/icon_art.svg") -19px -278px no-repeat;
-  background-size: 900px;
-}
-.Card .cardTop .arrow {
-  justify-self: center;
-}
-.Card .cardTop .arrow :first-child {
-  width: 24px;
-  height: 24px;
-  color: #b3b3b3;
-}
-.Card .cardTop .arrow :before {
-  content: "More ";
-}
-.Card .cardTop:hover {
+.card__top:hover {
   background-color: #fafafa;
   -moz-box-shadow: 0 -1px 8px -4px #000;
   -webkit-box-shadow: 0 -1px 8px -4px #000;
   box-shadow: 0 -1px 8px -4px #000;
 }
-.Card .cardTop.nonexpand .arrow span:before {
+.card__top-title {
+  font-size: 1.4em;
+  color: #555555;
+  padding-right: 52px;
+}
+.card__top-title-caption {
+  font-size: 68%;
+  color: #838383;
+}
+.card__top-arrow {
+  justify-self: center;
+}
+.card__top-arrow :first-child {
+  width: 24px;
+  height: 24px;
+  color: #b3b3b3;
+}
+.card__top-arrow :before {
+  content: "More ";
+}
+.card__top--nonexpand .card__top-arrow span:before {
   font-size: 0.9em;
 }
-.Card .cardTop.nonexpand .arrow :first-child {
+.card__top--nonexpand .card__top-arrow :first-child {
   color: #2bafd7;
 }
-.Card.active .cardTop:hover {
-  /* usage @import border-radius-custom(12px, 0, 10px, 0) */
-  -webkit-border-top-left-radius: 14px;
-  -webkit-border-top-right-radius: 14px;
-  -webkit-border-bottom-right-radius: 0;
-  -webkit-border-bottom-left-radius: 0;
-  border-top-left-radius: 14px;
-  border-top-right-radius: 14px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  background-clip: padding-box;
-}
-.Card .panel {
-  display: none;
-  overflow: hidden;
-  padding: 18px;
-}
 @media only screen and (max-width: 920px) {
-  .Card .cardTop {
+  .card__top {
     padding: 18px 8px;
   }
-  .Card .cardTop h3 {
+  .card__top-title {
     font-size: 1.2em;
     padding-right: 46px;
   }
-  .Card .cardTop .arrow a span {
+  .card__top-arrow a span {
     display: none;
   }
-  .Card .cardTop .arrow :before {
+  .card__top-arrow :before {
     content: "";
   }
 }
 @media only screen and (max-width: 740px) {
-  .Card {
-    border-top: 0;
-    border-right: 0;
-    border-left: 0;
-    border-color: #d1d2d4;
-    margin: 0;
-    /* usage @import border-radius(12px) */
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    background-clip: padding-box;
-    /* stops bg color from leaking outside the border: */
-  }
-  .Card.active .cardTop:hover {
-    /* usage @import border-radius(12px) */
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    background-clip: padding-box;
-    /* stops bg color from leaking outside the border: */
-  }
-  .Card .cardTop {
+  .card__top {
     min-height: 90px;
     grid-template-columns: 20px auto 120px 40px;
     grid-gap: 8px;
@@ -1151,24 +2017,36 @@ nav li div li a {
     background-clip: padding-box;
     /* stops bg color from leaking outside the border: */
   }
-  .Card .cardTop .alert {
-    width: 14px;
-    height: 28px;
-    background: transparent url("../img/icon_art.svg") -14px -202px no-repeat;
-    background-size: 640px;
-  }
-  .Card .cardTop h3 {
+  .card__top-title {
     padding-right: 12px;
   }
-  .Card .cardTop .arrow :first-child {
+  .card__top-arrow :first-child {
     width: 21px;
     height: 21px;
   }
 }
 @media only screen and (max-width: 480px) {
-  .Card .cardTop h3 {
+  .card__top-title {
     font-size: 1em;
   }
+}
+
+.quicklinks {
+  transition: 0.4s;
+  display: grid;
+  grid-template-columns: auto 80px;
+  padding: 12px;
+}
+.quicklinks__trigger {
+  padding: 28px 22px;
+  cursor: pointer;
+  align-self: center;
+  justify-self: center;
+}
+.quicklinks__trigger :first-child {
+  width: 24px;
+  height: 24px;
+  color: #b3b3b3;
 }
 
 .flipwrap {
@@ -1179,7 +2057,6 @@ nav li div li a {
 .flipwrap a {
   display: block;
   transition: 0.6s;
-  margin: 32px 42px;
   text-align: center;
   font-size: 8.4px;
   font-size: 0.84rem;
@@ -1238,52 +2115,6 @@ nav li div li a {
 .flipwrap .quicklinkItem {
   margin: 18px;
   position: relative;
-}
-
-.button {
-  font-size: 1em;
-  color: #fff;
-  background-color: #2bafd7;
-  /* usage @import border-radius(12px) */
-  -webkit-border-radius: 24px;
-  border-radius: 24px;
-  background-clip: padding-box;
-  /* stops bg color from leaking outside the border: */
-  display: inline-block;
-  margin: 22px 0;
-  padding: 10px 3em;
-}
-.button:hover {
-  color: #fff;
-  background-color: #1a718c;
-}
-.button.bt-outline {
-  color: #2bafd7;
-  background-color: transparent;
-  border: solid 1px #2bafd7;
-  padding: 8px 2em;
-  margin: 42px 0;
-}
-.button.bt-outline:hover {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: #1a718c;
-  color: #1a718c;
-}
-@media only screen and (max-width: 920px) {
-  .button {
-    font-size: 1em;
-  }
-}
-@media only screen and (max-width: 740px) {
-  .button {
-    font-size: 0.94em;
-    padding: 8px 2.6em;
-  }
-  .button.bt-outline {
-    font-size: 0.9em;
-    padding: 4px 2em;
-    margin: 18px 0;
-  }
 }
 
 .Related-block {
@@ -1498,17 +2329,6 @@ nav li div li a {
   }
 }
 
-.dviewWrapper .react-drawer-drawer {
-  position: relative;
-  background-color: #ededed;
-  height: auto;
-}
-
-.dviewContentContainer {
-  margin: 8px 0;
-  padding: 3px;
-}
-
 .subnav-container {
   margin-top: 90px;
   width: 90%;
@@ -1709,24 +2529,22 @@ nav li div li a {
   justify-content: space-between;
   align-items: flex-start;
 }
-.datavis .dvis-container {
+.datavis__container {
   color: #222;
   margin: 8px 18px 8px 0;
   padding-left: 18px;
-}
-.datavis .dvis-container.semiborder {
   border-left: solid 1px #ccc;
 }
-.datavis .dvis-data {
+.datavis__data {
   font-size: 1.8em;
   letter-spacing: -2px;
   line-height: 15px;
 }
-.datavis .dvis-small {
+.datavis__data-small {
   font-size: 50%;
   letter-spacing: 0;
 }
-.datavis label {
+.datavis__label {
   display: block;
   max-width: 100px;
   padding-top: 6px;
@@ -1737,33 +2555,33 @@ nav li div li a {
   text-transform: uppercase;
 }
 @media only screen and (max-width: 1180px) {
-  .datavis .dvis-data {
+  .datavis__data {
     font-size: 1.6em;
   }
 }
 @media only screen and (max-width: 920px) {
-  .datavis .dvis-container {
+  .datavis__container {
     display: none;
   }
-  .datavis .dvis-container:nth-child(1), .datavis .dvis-container:nth-child(2) {
+  .datavis__container:nth-child(1), .datavis__container:nth-child(2) {
     display: block;
   }
-  .datavis label {
+  .datavis__label {
     font-size: 0.5em;
   }
 }
 @media only screen and (max-width: 740px) {
-  .datavis .dvis-container {
+  .datavis__container {
     display: none;
   }
-  .datavis .dvis-container:nth-child(2) {
+  .datavis__container:nth-child(2) {
     display: none;
   }
-  .datavis .dvis-data {
+  .datavis__data {
     font-size: 1.4em;
     line-height: 12px;
   }
-  .datavis label {
+  .datavis__label {
     font-size: 0.44em;
   }
 }
@@ -1830,6 +2648,23 @@ footer > div .social {
   grid-area: f-social;
   justify-self: end;
 }
+footer > div .social label {
+  display: block;
+  text-align: right;
+}
+footer > div .social a:last-child i {
+  margin: 0;
+}
+footer > div .social i {
+  transition: 0.4s;
+  color: #fff;
+  opacity: 0.6;
+  font-size: 1.4em;
+  margin: 8px;
+}
+footer > div .social i:hover {
+  opacity: 1;
+}
 footer > div .tempSwitch {
   grid-area: f-switch;
   text-align: center;
@@ -1888,6 +2723,8 @@ footer > div .fhr {
   footer > div .social {
     justify-self: center;
     margin: 48px 0;
+  }
+  footer > div .social label {
     text-align: center;
   }
   footer > div .copyright {
@@ -1985,6 +2822,18 @@ footer > div .fhr {
   }
 }
 
+@-webkit-keyframes sysmAppear {
+  0% {
+    margin-top: -120px;
+  }
+}
+/* Safari 4.0 - 8.0 */
+@keyframes sysmAppear {
+  0% {
+    margin-top: -120px;
+  }
+}
+/* Standard syntax */
 @-webkit-keyframes dismiss {
   0% {
     top: 0px;
@@ -1998,9 +2847,16 @@ footer > div .fhr {
 }
 /* Standard syntax */
 .system-message {
+  -webkit-animation-name: sysmAppear;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s;
+  /*Safari 4.0 - 8.0 */
+  animation-name: sysmAppear;
+  animation-duration: 0.5s;
   background-color: #ffd216;
   color: #222;
   font-size: 1em;
+  margin-top: 0px;
 }
 .system-message.dismiss {
   -webkit-animation-name: dismiss;
@@ -2010,7 +2866,7 @@ footer > div .fhr {
   animation-name: dismiss;
   animation-duration: 1s;
   transition: 1s;
-  margin-top: -300px;
+  margin-top: -120px;
 }
 .system-message .sysmsg-close {
   transition: 0.4s;
@@ -2135,7 +2991,7 @@ footer > div .fhr {
   text-align: center;
 }
 
-.visual > div {
+.card__top-visual > div {
   width: 100%;
   height: 80px;
   background-color: transparent;
@@ -2143,40 +2999,40 @@ footer > div .fhr {
   background-position: 0 50%;
   background-size: contain;
 }
-.visual > div#tempGraph_00 {
+.card__top-visual > div#tempGraph_00 {
   background-image: url("../img/tempGraph_00n.svg");
   height: 66px;
 }
-.visual > div#tempGraph_01 {
+.card__top-visual > div#tempGraph_01 {
   background-image: url("../img/tempGraph_01.svg");
   height: 66px;
 }
-.visual > div#tempGraph_02 {
+.card__top-visual > div#tempGraph_02 {
   background-image: url("../img/tempGraph_02.svg");
   height: 90px;
 }
-.visual > div#tempGraph_03 {
+.card__top-visual > div#tempGraph_03 {
   background-image: url("../img/tempGraph_03.svg");
   height: 70px;
 }
-.visual > div#tempGraph_07 {
+.card__top-visual > div#tempGraph_07 {
   background-image: url("../img/tempGraph_07.svg");
   height: 70px;
 }
 @media only screen and (max-width: 740px) {
-  .visual > div#tempGraph_01 {
+  .card__top-visual > div#tempGraph_01 {
     background-image: url("../img/tempGraph_14.svg");
     height: 66px;
   }
-  .visual > div#tempGraph_02 {
+  .card__top-visual > div#tempGraph_02 {
     background-image: url("../img/tempGraph_16.svg");
     height: 62px;
   }
-  .visual > div#tempGraph_03 {
+  .card__top-visual > div#tempGraph_03 {
     background-image: url("../img/tempGraph_05.svg");
     height: 62px;
   }
-  .visual > div#tempGraph_07 {
+  .card__top-visual > div#tempGraph_07 {
     background-image: url("../img/tempGraph_15.svg");
     height: 58px;
   }

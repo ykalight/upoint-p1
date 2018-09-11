@@ -16,7 +16,7 @@ class CardItem extends Component {
         this._toggleDiv = this._toggleDiv.bind(this);
         this.state = { 
             visible: 'panel',
-            active: 'Card'
+            active: 'card'
         };
     }
 
@@ -24,39 +24,38 @@ class CardItem extends Component {
         $(this.refs['toggle-div']).slideToggle();
         this.setState(
             { 
-                active: this.state.active === 'Card'? 'Card active' : 'Card'
+                active: this.state.active === 'card'? 'card card--active' : 'card'
             }
         );
-        this.state.active === 'Card' ? arrowDirection = <MdKeyboardArrowUp /> : arrowDirection = <MdKeyboardArrowDown/>
+        this.state.active === 'card' ? arrowDirection = <MdKeyboardArrowUp /> : arrowDirection = <MdKeyboardArrowDown/>
     }
 
     componentWillMount(){
-        this.state.active === 'Card active' ? arrowDirection = <MdKeyboardArrowUp /> : arrowDirection = <MdKeyboardArrowDown/>
+        this.state.active === 'card card--active' ? arrowDirection = <MdKeyboardArrowUp /> : arrowDirection = <MdKeyboardArrowDown/>
     }
 
     render() {
 
         return (
         <FadeIn>
-            {this.props.showpin && (<Pin classname="cardpin" />)}
+        {this.props.showpin && (<Pin classname="cardpin" />)}
         <div className={this.state.active} > 
-            <div className="cardTop" onClick={this._toggleDiv} style={cardtopStyle}>
-                <div className="icon">
+            <div className="card__top" onClick={this._toggleDiv} style={cardtopStyle}>
+                <div className="card__top-icon">
                     <div></div>
                 </div>
-                <h3>Retirement accounts
-                    <p>as of August 31, 2018</p>
-                    {/* <p style={{color:'#f00', fontWeight:'bold'}}>! You're not on track</p> */}
+                <h3 className="card__top-title">Retirement accounts
+                    <p className="card__top-title-caption">as of August 31, 2018</p>
                 </h3>
-                <div className="visual">
+                <div className="card__top-visual">
                     <div id="tempGraph_00"></div>
                 </div>
-                <div className="arrow">
+                <div className="card__top-arrow">
                     {arrowDirection}
                 </div>
             </div>
             
-            <div className="panel" ref="toggle-div">
+            <div className="card__panel" ref="toggle-div">
                 <div>
                     <Detail401k />
                 </div>

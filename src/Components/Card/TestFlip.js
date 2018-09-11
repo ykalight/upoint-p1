@@ -2,18 +2,14 @@ import React, { Component } from 'react';
 import throttle from 'lodash/throttle';
 import articles from '../../data/test_articles';
 import FlipMove from 'react-flip-move';
-
-import FadeIn from 'react-fade-in';
 import PinQuick from '../Utility/PinQuick';
 import {Link} from 'react-router-dom';
-
 
 class ListItem extends Component {
   render() {
     const style = { zIndex: 100 - this.props.index, position: 'relative'};
     return (
       <div style={style} className="flipitem">
-        <FadeIn>
         <div className="quicklinkItem">
             {this.props.showpin && (<PinQuick onClickToFirst={this.props.clickHandler1} onClickToLast={this.props.clickHandler2} />)}
            
@@ -22,7 +18,6 @@ class ListItem extends Component {
                 <label>{this.props.title}</label>
             </Link>
         </div>
-        </FadeIn>
       </div>
 
     );
@@ -37,7 +32,8 @@ class Shuffle extends Component {
       showpin: null,
       removedArticles: [],
       sortingMethod: 'chronological',
-      enterLeaveAnimation: 'accordionHorizontal',
+      enterAnimation: 'elevator',
+      leaveAnimation: 'none',
       articles
     };
   }
@@ -105,8 +101,8 @@ class Shuffle extends Component {
           <FlipMove className="flipwrap"
             staggerDurationBy="30"
             duration={500}
-            enterAnimation={this.state.enterLeaveAnimation}
-            leaveAnimation={this.state.enterLeaveAnimation}
+            enterAnimation={this.state.enterAnimation}
+            leaveAnimation={this.state.leaveAnimation}
             typeName="div"
           >
             { this.renderArticles() }
