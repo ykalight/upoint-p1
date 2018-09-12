@@ -1,20 +1,24 @@
-.ficon-pin{ 
+.ficon-pin-dark{ 
     font-size:1.2em;
     color: $pin-color;
     @include border-radius(100px);
-    // border:dotted 1px #777;
-    &.pinned{color: $pin-active-color; font-weight:bold}   
+    padding: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.pinned{color: $pin-active-color}
 }
-.cardpin{top:18px !important; right:22px !important;}
+.cardpin{right:4px;}
 
 .iva-trigger{
-    bottom:100px;
-    width:54px;
-    height:50px;
-    padding: 8px 12px 12px 8px;
+    bottom:60px;
+    width:42px;
+    height:40px;
+    padding: 6px 8px 8px 8px;
     background-color: darken($app-green, 8%);
     color:#fff;
-    font-size: .9em; font-weight:bold;
+    font-size: .74em; font-weight:bold;
     @include border-radius-custom(8px, 0, 0, 8px);
 
     @media only screen and (max-width: $medium) {

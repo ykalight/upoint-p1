@@ -41,7 +41,7 @@ class Pin extends Component {
 
         return (
             <div style={pinStyle} title="Pin to Dashboard" 
-                className={`${this.state.pinclass} ${this.props.classname} ficon-pin upoint-ficon`} 
+                className={`${this.state.pinclass} ${this.props.classname} ficon-pin-dark upoint-ficon`} 
                 onClick={this._toggle}
             >
                 

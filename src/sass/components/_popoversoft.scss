@@ -14,9 +14,9 @@
 
 .popover-soft{
     -webkit-animation-name: pop; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 2.8s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2.4s; /* Safari 4.0 - 8.0 */
     animation-name: pop;
-    animation-duration: 2.8;
+    animation-duration: 2.4;
 
     opacity: 0;
     @include font(.8, 'Regular');

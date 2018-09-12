@@ -7,7 +7,7 @@ let pinStyle = {
     height:'26px',
     position:'absolute',
     right:'4px',
-    top:'4px',
+    top:'-10px',
     cursor:'pointer',
     zIndex:'999'
 }
@@ -23,7 +23,6 @@ class PinQuick extends Component {
     }
 
     _toggle(){
-        // this.setState({pinclass: this.state.pinclass === "pinned" ? "" : "pinned"})
         if(this.state.pinclass === "pinned"){
             this.setState({pinclass: "", msgShow: false});
             this.props.onClickToLast()
@@ -43,7 +42,7 @@ class PinQuick extends Component {
 
         return (
             <div style={pinStyle} title="Pin to Dashboard" 
-                className={`${this.state.pinclass} ${this.props.classname} ficon-pin upoint-ficon`} 
+                className={`${this.state.pinclass} ${this.props.classname} ficon-pin-dark upoint-ficon`} 
                 onClick={this._toggle}
             >
                 

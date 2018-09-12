@@ -173,6 +173,42 @@
   content: "";
 }
 
+.ficon-pin-dark:before {
+  content: "";
+}
+
+.ficon-boxes-fit:before {
+  content: "";
+}
+
+.ficon-card-c:before {
+  content: "";
+}
+
+.ficon-card-b:before {
+  content: "";
+}
+
+.ficon-person-card:before {
+  content: "";
+}
+
+.ficon-specialist-b:before {
+  content: "";
+}
+
+.ficon-plus-outline:before {
+  content: "";
+}
+
+.ficon-specialist-a:before {
+  content: "";
+}
+
+.ficon-prescription:before {
+  content: "";
+}
+
 html {
   font-size: 62.5%;
 }
@@ -2035,7 +2071,7 @@ nav li div li a {
   transition: 0.4s;
   display: grid;
   grid-template-columns: auto 80px;
-  padding: 12px;
+  padding: 4px 12px;
 }
 .quicklinks__trigger {
   padding: 28px 22px;
@@ -2113,7 +2149,7 @@ nav li div li a {
   }
 }
 .flipwrap .quicklinkItem {
-  margin: 18px;
+  margin: 28px;
   position: relative;
 }
 
@@ -2414,10 +2450,10 @@ nav li div li a {
 .popover-soft {
   -webkit-animation-name: pop;
   /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 2.8s;
+  -webkit-animation-duration: 2.4s;
   /* Safari 4.0 - 8.0 */
   animation-name: pop;
-  animation-duration: 2.8;
+  animation-duration: 2.4;
   opacity: 0;
   font-size: 8px;
   font-size: 0.8rem;
@@ -2427,8 +2463,8 @@ nav li div li a {
   background-color: #ffdc49;
   text-align: center;
   /* usage @import border-radius(12px) */
-  -webkit-border-radius: 12px;
-  border-radius: 12px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
 }
@@ -2773,33 +2809,35 @@ footer > div .fhr {
   }
 }
 
-.ficon-pin {
+.ficon-pin-dark {
   font-size: 1.2em;
-  color: #b5b5b5;
+  color: #8c8c8c;
   /* usage @import border-radius(12px) */
   -webkit-border-radius: 100px;
   border-radius: 100px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
+  padding: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.ficon-pin.pinned {
+.ficon-pin-dark.pinned {
   color: #ea7600;
-  font-weight: bold;
 }
 
 .cardpin {
-  top: 18px !important;
-  right: 22px !important;
+  right: 4px;
 }
 
 .iva-trigger {
-  bottom: 100px;
-  width: 54px;
-  height: 50px;
-  padding: 8px 12px 12px 8px;
+  bottom: 60px;
+  width: 42px;
+  height: 40px;
+  padding: 6px 8px 8px 8px;
   background-color: #8fb22c;
   color: #fff;
-  font-size: 0.9em;
+  font-size: 0.74em;
   font-weight: bold;
   /* usage @import border-radius-custom(12px, 0, 10px, 0) */
   -webkit-border-top-left-radius: 8px;
