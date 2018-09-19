@@ -16,11 +16,19 @@
                 "destination": "/blank"
             },
             {
-                "label": "Reimbursement",
+                "label": "Life Changes",
                 "destination": "/blank"
             },
             {
-                "label": "Job & career",
+                "label": "Your Well-being",
+                "destination": "/blank"
+            },
+            {
+                "label": "Perk & discounts",
+                "destination": "/blank"
+            },
+            {
+                "label": "Reimbursement",
                 "destination": "/blank"
             },
             {

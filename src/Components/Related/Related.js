@@ -7,28 +7,30 @@ import FadeIn from 'react-fade-in';
 class Related extends Component {
   constructor(){
     super();
-    this._showAll = this._showAll.bind(this);
+    this.showNext = this.showNext.bind(this);
     this._showDefault = this._showDefault.bind(this);
     this.state = {
       show: 3,
-      showall: false,
+      shownAll: false,
       btlabel: "More..."
     }
   }
 
-  _showAll() {
-    let cnt = this.props.relateddata.length;
-      this.setState(
-          { 
-            show: cnt, showall: true, btlabel: "Less..."
-          }
-      );
+  showNext() {
+    let cntall = this.props.relateddata.length,
+    cnt = this.state.show + 9;
+
+    if(cnt >= cntall){
+      this.setState({show: cnt, shownAll: true, btlabel: "Less..."});
+    } else {
+      this.setState({show: cnt});
+    }
   }
 
   _showDefault() {
       this.setState(
           { 
-            show: 3, showall: false, btlabel: "More..."
+            show: 3, btlabel: "More..."
           }
       );
   }
@@ -72,7 +74,7 @@ class Related extends Component {
             
 
             <div className="more">
-              <span onClick={this.state.showall ? this._showDefault : this._showAll}>
+              <span onClick={this.state.shownAll ? this._showDefault : this.showNext}>
                 <Button addclass="button button--outline" destination="#" onClick={this.preventDefault} label={this.state.btlabel} />
               </span>
             </div>

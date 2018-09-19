@@ -2084,6 +2084,19 @@ nav li div li a {
   height: 24px;
   color: #b3b3b3;
 }
+@media only screen and (max-width: 740px) {
+  .quicklinks {
+    grid-template-columns: auto 26px;
+    padding: 4px 0;
+  }
+  .quicklinks__trigger {
+    padding: 0;
+  }
+  .quicklinks__trigger :first-child {
+    width: 18px;
+    height: 18px;
+  }
+}
 
 .flipwrap {
   display: grid;
@@ -2151,6 +2164,11 @@ nav li div li a {
 .flipwrap .quicklinkItem {
   margin: 28px;
   position: relative;
+}
+@media only screen and (max-width: 740px) {
+  .flipwrap .quicklinkItem {
+    margin: 0px;
+  }
 }
 
 .Related-block {
@@ -2926,78 +2944,89 @@ footer > div .fhr {
   color: #fff;
 }
 
+.donutchart .donutchart-innertext-label {
+  display: none;
+}
+.donutchart .donutchart-innertext-value {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-top: -5px;
+}
+
 .card-detail {
-  width: 92%;
+  width: 98%;
   margin: auto;
+  padding: 24px;
+  border-top: solid 1px #ddd;
+}
+.card-detail:last-child {
+  padding-bottom: 0;
 }
 
 .card-detail-head {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  /* usage @import border-radius(12px) */
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  background-clip: padding-box;
-  /* stops bg color from leaking outside the border: */
-  padding: 24px 12px;
-  background-color: #ededed;
+  padding: 0 12px 24px 0;
+  border-bottom: dotted 1px #b8b8b8;
 }
 .card-detail-head h4 {
-  font-size: 13px;
-  font-size: 1.3rem;
-  font-family: FSThriveElliotWeb-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #555555;
+  font-size: 15px;
+  font-size: 1.5rem;
+  font-family: FSThriveElliotWeb-Bold, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .card-detail-head .action {
   display: flex;
   align-items: center;
+  margin-left: 18px;
   font-size: 0.9em;
   color: #2bafd7;
+  font-weight: bold;
 }
 .card-detail-head .action span:before {
-  font-size: 16px;
-  margin-right: 8px;
+  font-size: 12px;
+  margin-right: 6px;
   /* usage @import border-radius(12px) */
   -webkit-border-radius: 100%;
   border-radius: 100%;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
-  padding: 6px;
+  padding: 5px;
   border: solid 1px #2bafd7;
 }
 
 .card-detail-row {
   display: flex;
   align-items: center;
-  border-bottom: solid 1px #bdbdbd;
-  padding: 28px 0;
+  justify-content: space-between;
 }
 .card-detail-row h5 {
-  width: 18%;
-  font-size: 1.05em;
+  width: 24%;
+  font-size: 1.4em;
   font-weight: bold;
 }
 .card-detail-row h5 div {
-  font-size: 70%;
-  color: #666666;
+  font-size: 64%;
+  color: #4d4d4d;
+}
+.card-detail-row h6 {
+  font-size: 0.8em;
+  font-weight: bold;
+  text-align: center;
 }
 .card-detail-row > div {
-  display: flex;
-  align-items: center;
-  min-height: 40px;
-  padding: 0 2.8em;
-  border-right: solid 1px #ccc;
+  min-height: 200px;
+  padding: 0 2.2em;
 }
 .card-detail-row > div:nth-last-child(-n+2) {
   border: 0;
 }
-.card-detail-row > div:last-child {
-  flex-grow: 2;
-  justify-content: flex-end;
-  padding: 0 18px 0 0;
+.card-detail-row:last-child > div {
+  min-height: auto;
 }
 .card-detail-row .data {
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: bold;
   color: #555555;
 }
@@ -3008,8 +3037,8 @@ footer > div .fhr {
   font-size: 0.72em;
 }
 .card-detail-row p.warn {
+  font-size: 0.9em;
   color: #c00;
-  font-size: 90%;
 }
 .card-detail-row .highlight {
   color: #ea7600;
@@ -3021,12 +3050,14 @@ footer > div .fhr {
   margin: 0;
   padding-left: 1.8em;
   padding-right: 1.8em;
+  text-align: center;
 }
 
 .card-detail-last {
   font-size: 90%;
-  margin: 18px 0 58px 0;
+  margin: 24px 0 0 0;
   text-align: center;
+  font-weight: bold;
 }
 
 .card__top-visual > div {

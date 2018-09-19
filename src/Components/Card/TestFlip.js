@@ -19,7 +19,6 @@ class ListItem extends Component {
             </Link>
         </div>
       </div>
-
     );
   }
 };

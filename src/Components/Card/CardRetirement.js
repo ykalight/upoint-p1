@@ -3,7 +3,8 @@ import $ from 'jquery';
 import {MdKeyboardArrowUp, MdKeyboardArrowDown} from 'react-icons/lib/md';
 import FadeIn from 'react-fade-in';
 import Pin from '../Utility/Pin';
-import Detail401k from '../Content/Detail401k';
+import Detail401kChart from '../Content/Detail401kChart';
+//import scrollToComponent from 'react-scroll-to-component';
 
 let arrowDirection = <MdKeyboardArrowDown />,
 cardtopStyle = {
@@ -20,6 +21,10 @@ class CardItem extends Component {
         };
     }
 
+    // scrollTo() {
+    //     scrollToComponent(this.HeaderBar, { offset: -120, align: 'top', duration: 500})
+    // }
+
     _toggleDiv() {
         $(this.refs['toggle-div']).slideToggle();
         this.setState(
@@ -28,6 +33,8 @@ class CardItem extends Component {
             }
         );
         this.state.active === 'card' ? arrowDirection = <MdKeyboardArrowUp /> : arrowDirection = <MdKeyboardArrowDown/>
+
+        //this.scrollTo()
     }
 
     componentWillMount(){
@@ -57,7 +64,7 @@ class CardItem extends Component {
             
             <div className="card__panel" ref="toggle-div">
                 <div>
-                    <Detail401k />
+                    <Detail401kChart />
                 </div>
             </div>
 
