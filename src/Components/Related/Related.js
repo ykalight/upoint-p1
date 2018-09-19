@@ -30,7 +30,7 @@ class Related extends Component {
   _showDefault() {
       this.setState(
           { 
-            show: 3, btlabel: "More..."
+            show: 3, shownAll: false, btlabel: "More..."
           }
       );
   }
